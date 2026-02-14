@@ -480,6 +480,7 @@ footer {
     background-color: #0F172A;
     /* Dark background as per image */
     color: white;
+    padding: 4rem 0 2rem;
 }
 
 .footer-grid-new {
@@ -495,6 +496,10 @@ footer {
 
 .footer-brand-col .logo {
     color: white;
+}
+
+.footer-brand-col .logo img {
+    filter: brightness(0) invert(1);
 }
 
 .footer-contact-col {
@@ -531,6 +536,12 @@ footer {
 .footer-bottom {
     border-top: 1px solid #334155;
     color: #94A3B8;
+    padding-top: 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 1rem;
 }
 
 .footer-bottom a {
