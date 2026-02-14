@@ -449,11 +449,12 @@ ul {
 
 .deployment-image {
     flex: 1;
-    background: white;
-    border-radius: 12px;
-    height: 350px;
-    border: 1px solid var(--border-color);
-    padding: 2rem;
+}
+
+.deployment-image img {
+    width: 100%;
+    height: auto;
+    display: block;
 }
 
 .deployment-text {
