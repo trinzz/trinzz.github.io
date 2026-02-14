@@ -789,11 +789,6 @@ footer {
 
 /* Mobile Responsive */
 @media (max-width: 768px) {
-    .nav-links {
-        display: none;
-        /* Hide desktop nav */
-    }
-
     .mobile-menu-btn {
         display: flex;
         /* Show mobile toggle */
