@@ -372,10 +372,17 @@
 
         // Email capture for whitepaper download
         document.querySelector('.whitepaper-btn')?.addEventListener('click', function() {
-            const email = prompt('Please enter your email to download the whitepaper:');
-            if (email && email.includes('@')) {
-                alert('Thank you! The whitepaper download link has been sent to ' + email);
-                // In production, this would trigger an actual email send
+            // Simple validation - basic email pattern check
+            const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+            const email = prompt('Please enter your email address to receive the whitepaper download link:');
+            
+            if (email) {
+                if (emailPattern.test(email)) {
+                    alert('Thank you! The whitepaper download link will be sent to ' + email);
+                    // In production, this would trigger an actual API call to send the email
+                } else {
+                    alert('Please enter a valid email address.');
+                }
             }
         });
     </script>
