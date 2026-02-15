@@ -1817,6 +1817,13 @@ footer {
     height: 64px;
     border-radius: 50%;
     background-color: var(--secondary-color);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 1.5rem;
+    color: white;
+}
+
 .solution-card {
     background-color: var(--white);
     border: 1px solid var(--border-color);
