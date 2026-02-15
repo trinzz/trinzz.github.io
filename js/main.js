@@ -49,4 +49,35 @@ document.addEventListener('DOMContentLoaded', () => {
             document.getElementById(target).classList.add('active');
         });
     });
+
+    // Hero Background Animation Enhancement
+    // Check for reduced motion preference
+    const prefersReducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+    
+    if (!prefersReducedMotion) {
+        const heroBackground = document.getElementById('hero-bg');
+        
+        if (heroBackground) {
+            // Optional: Add subtle parallax effect on scroll
+            let ticking = false;
+            
+            window.addEventListener('scroll', () => {
+                if (!ticking) {
+                    window.requestAnimationFrame(() => {
+                        const scrollY = window.scrollY;
+                        const heroSection = document.querySelector('.hero');
+                        
+                        if (heroSection && scrollY < heroSection.offsetHeight) {
+                            // Subtle parallax movement
+                            heroBackground.style.transform = `translateY(${scrollY * 0.3}px)`;
+                        }
+                        
+                        ticking = false;
+                    });
+                    
+                    ticking = true;
+                }
+            });
+        }
+    }
 });
