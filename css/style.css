@@ -1497,15 +1497,39 @@ footer {
     }
 }
 
-/* Styled Bullets - shared for hero and content sections */
-.hero-bullets,
+/* Solutions Pages - Clinical Imaging Infrastructure */
+
+/* Hero bullets for solutions pages */
+.hero-bullets {
+    list-style: none;
+    padding: 0;
+    margin: 1.5rem 0 2rem 0;
+}
+
+.hero-bullets li {
+    position: relative;
+    padding-left: 1.75rem;
+    margin-bottom: 0.75rem;
+    color: var(--text-color);
+    line-height: 1.6;
+}
+
+.hero-bullets li::before {
+    content: "•";
+    position: absolute;
+    left: 0;
+    color: var(--secondary-color);
+    font-weight: bold;
+    font-size: 1.25rem;
+}
+
+/* Content bullets - shared styling */
 .content-bullets {
     list-style: none;
     padding: 0;
     margin: 1.5rem 0;
 }
 
-.hero-bullets li,
 .content-bullets li {
     padding-left: 1.5rem;
     position: relative;
@@ -1513,13 +1537,29 @@ footer {
     color: var(--text-color);
 }
 
-.hero-bullets li:before,
 .content-bullets li:before {
     content: "•";
     position: absolute;
     left: 0;
     color: var(--secondary-color);
     font-weight: bold;
+}
+
+/* Problem Section */
+.problem-section {
+    background-color: var(--white);
+}
+
+.problem-content {
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+/* Solutions Page Styles */
+.solutions-hero {
+    padding-top: 160px;
+    padding-bottom: 5rem;
+    background: linear-gradient(135deg, var(--light-bg) 0%, var(--white) 100%);
 }
 
 /* ICP Cards Grid */
