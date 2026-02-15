@@ -1528,6 +1528,27 @@ footer {
     justify-content: center;
 }
 
+/* Enterprise Trust Strip */
+.trust-strip-section {
+    background-color: var(--white);
+    padding: 2rem 0;
+    border-bottom: 1px solid var(--border-color);
+    text-align: center;
+}
+
+.trust-strip-title {
+    font-size: 0.95rem;
+    font-weight: 600;
+    color: var(--text-color);
+    margin-bottom: 0.5rem;
+}
+
+.trust-strip-badges {
+    font-size: 0.875rem;
+    font-weight: 500;
+    color: #64748B;
+}
+
 .barrier-section {
     background-color: var(--white);
 }
@@ -1552,6 +1573,58 @@ footer {
 }
 
 .barrier-emphasis {
+    font-weight: 600;
+    color: var(--primary-color);
+}
+
+/* Internal Infrastructure Bottleneck Section */
+.bottleneck-section {
+    background-color: var(--light-bg);
+}
+
+.bottleneck-section h2 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-bottom: 2rem;
+    text-align: center;
+}
+
+.bottleneck-content {
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.bottleneck-content p {
+    font-size: 1.1rem;
+    color: var(--text-color);
+    margin-bottom: 1.5rem;
+    line-height: 1.8;
+}
+
+.bottleneck-list {
+    list-style: none;
+    margin: 1.5rem 0;
+    padding-left: 0;
+}
+
+.bottleneck-list li {
+    font-size: 1.1rem;
+    color: var(--text-color);
+    margin-bottom: 1rem;
+    padding-left: 1.5rem;
+    position: relative;
+    line-height: 1.8;
+}
+
+.bottleneck-list li:before {
+    content: "•";
+    position: absolute;
+    left: 0;
+    color: var(--secondary-color);
+    font-weight: bold;
+}
+
+.bottleneck-emphasis {
     font-weight: 600;
     color: var(--primary-color);
 }
@@ -1620,6 +1693,23 @@ footer {
     transform: translateY(-5px);
 }
 
+.solution-icon {
+    width: 56px;
+    height: 56px;
+    border-radius: 50%;
+    background-color: #EFF6FF;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 1.5rem;
+}
+
+.solution-icon svg {
+    width: 28px;
+    height: 28px;
+    color: var(--secondary-color);
+}
+
 .solution-card h3 {
     font-size: 1.5rem;
     font-weight: 700;
@@ -1672,13 +1762,14 @@ footer {
 .closing-content p {
     font-size: 1.1rem;
     color: var(--text-color);
-    margin-bottom: 2.5rem;
+    margin-bottom: 1.5rem;
     line-height: 1.8;
 }
 
 .closing-cta {
     display: flex;
     justify-content: center;
+    gap: 1rem;
 }
 
 /* Responsive adjustments for Solutions page */
