@@ -1497,35 +1497,15 @@ footer {
     }
 }
 
-/* Hero Bullets */
-.hero-bullets {
-    list-style: none;
-    padding: 0;
-    margin: 1.5rem 0;
-}
-
-.hero-bullets li {
-    padding-left: 1.5rem;
-    position: relative;
-    margin-bottom: 0.75rem;
-    color: var(--text-color);
-}
-
-.hero-bullets li:before {
-    content: "•";
-    position: absolute;
-    left: 0;
-    color: var(--secondary-color);
-    font-weight: bold;
-}
-
-/* Content Bullets */
+/* Styled Bullets - shared for hero and content sections */
+.hero-bullets,
 .content-bullets {
     list-style: none;
     padding: 0;
     margin: 1.5rem 0;
 }
 
+.hero-bullets li,
 .content-bullets li {
     padding-left: 1.5rem;
     position: relative;
@@ -1533,6 +1513,7 @@ footer {
     color: var(--text-color);
 }
 
+.hero-bullets li:before,
 .content-bullets li:before {
     content: "•";
     position: absolute;
@@ -1594,9 +1575,28 @@ footer {
     margin-bottom: 1rem;
 }
 
+/* Capability Cards - vertical card layout for diagnostic infrastructure page */
+.capabilities-grid .capability-item h3 {
+    font-size: 1.25rem;
+    margin-bottom: 0.75rem;
+    color: var(--primary-color);
+}
+
+.capabilities-grid .capability-item p {
+    font-size: 1rem;
+    line-height: 1.6;
+    color: var(--text-color);
+    margin: 0;
+}
+
+.capabilities-grid .capability-item {
+    display: block;
+    text-align: left;
+    padding: 2rem;
+}
+
 @media (max-width: 768px) {
     .icp-cards-grid {
         grid-template-columns: 1fr;
     }
-}
 }
