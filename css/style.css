@@ -183,6 +183,20 @@ ul {
     justify-content: center;
 }
 
+.hero-bullets {
+    list-style: none;
+    margin: 2rem 0;
+    padding: 0;
+}
+
+.hero-bullets li {
+    font-size: 1.125rem;
+    color: var(--text-color);
+    margin-bottom: 0.75rem;
+    padding-left: 0;
+    line-height: 1.6;
+}
+
 .hero-video-container {
     flex: 1;
     border-radius: 12px;
