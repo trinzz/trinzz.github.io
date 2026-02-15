@@ -560,6 +560,10 @@ footer {
         flex-direction: column;
     }
 
+    .deployment-image {
+        display: none;
+    }
+
     .footer-grid-new {
         flex-direction: column;
         gap: 2rem;
