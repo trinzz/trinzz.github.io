@@ -758,6 +758,82 @@ footer {
     font-size: 1.1rem;
 }
 
+/* Enterprise Ready Section */
+.enterprise-section {
+    background-color: var(--white);
+}
+
+.enterprise-grid {
+    display: flex;
+    align-items: center;
+    gap: 4rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.enterprise-content {
+    flex: 3;
+}
+
+.enterprise-content h2 {
+    font-size: 2.5rem;
+    color: var(--primary-color);
+    margin-bottom: 2rem;
+}
+
+.enterprise-list {
+    list-style: none;
+    padding: 0;
+}
+
+.enterprise-list li {
+    position: relative;
+    padding-left: 2rem;
+    margin-bottom: 1.5rem;
+    color: #475569;
+    font-size: 1.1rem;
+    line-height: 1.8;
+}
+
+.enterprise-list li::before {
+    content: "✓";
+    position: absolute;
+    left: 0;
+    top: 0;
+    color: #3B82F6;
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+
+.enterprise-image {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.enterprise-image img {
+    width: 100%;
+    max-width: 400px;
+    height: auto;
+    display: block;
+}
+
+@media (max-width: 768px) {
+    .enterprise-grid {
+        flex-direction: column;
+        gap: 2rem;
+    }
+    
+    .enterprise-content h2 {
+        font-size: 2rem;
+    }
+    
+    .enterprise-list li {
+        font-size: 1rem;
+    }
+}
+
 /* Labeling Services CTA Section */
 .cta-section {
     text-align: center;
