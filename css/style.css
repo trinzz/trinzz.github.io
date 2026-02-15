@@ -1496,4 +1496,475 @@ footer {
         font-size: 1.1rem;
     }
 }
+
+/* ========================================
+   Enterprise Hospital Labs Page Styles
+   ======================================== */
+
+/* Hospital Hero Section */
+.hospital-hero {
+    flex-direction: column;
+    text-align: center;
+}
+
+.hospital-hero .hero-text {
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.hospital-hero h1 {
+    font-size: 3.5rem;
+    margin-bottom: 1.5rem;
+}
+
+.hero-subheadline {
+    font-size: 1.2rem;
+    color: #64748B;
+    margin-bottom: 1.5rem;
+    line-height: 1.8;
+}
+
+.hero-bullets {
+    list-style: none;
+    margin: 2rem 0;
+    max-width: 700px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: left;
+}
+
+.hero-bullets li {
+    display: flex;
+    align-items: flex-start;
+    gap: 1rem;
+    margin-bottom: 1rem;
+    font-size: 1.05rem;
+    color: var(--text-color);
+}
+
+.hero-bullets svg {
+    width: 24px;
+    height: 24px;
+    color: var(--secondary-color);
+    flex-shrink: 0;
+    margin-top: 2px;
+}
+
+/* Clinical Standards Section */
+.clinical-standards-section {
+    background-color: var(--light-bg);
+    text-align: center;
+}
+
+.clinical-standards-section h2 {
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+}
+
+.standards-content {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.standards-content p {
+    font-size: 1.15rem;
+    color: var(--text-color);
+    margin-bottom: 1.5rem;
+    line-height: 1.8;
+}
+
+.standards-emphasis {
+    font-weight: 600;
+    color: var(--primary-color);
+    font-size: 1.2rem !important;
+    margin-top: 2rem;
+}
+
+/* Challenge Section */
+.challenge-section {
+    background-color: var(--white);
+}
+
+.challenge-section h2 {
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+    text-align: center;
+}
+
+.challenge-content {
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.challenge-intro {
+    font-size: 1.15rem;
+    color: var(--text-color);
+    margin-bottom: 2rem;
+    text-align: center;
+}
+
+.challenge-list {
+    list-style: none;
+    margin: 2rem 0;
+}
+
+.challenge-list li {
+    display: flex;
+    align-items: flex-start;
+    gap: 1rem;
+    margin-bottom: 1.5rem;
+    font-size: 1.1rem;
+    color: var(--text-color);
+    padding: 1rem;
+    background-color: #FEF2F2;
+    border-radius: 8px;
+    border-left: 4px solid #EF4444;
+}
+
+.challenge-list svg {
+    width: 24px;
+    height: 24px;
+    color: #EF4444;
+    flex-shrink: 0;
+    margin-top: 2px;
+}
+
+.challenge-conclusion {
+    font-size: 1.1rem;
+    color: var(--text-color);
+    margin-top: 2rem;
+    text-align: center;
+    line-height: 1.8;
+}
+
+/* Infrastructure Provider Section */
+.infrastructure-provider-section {
+    background-color: var(--light-bg);
+    text-align: center;
+}
+
+.infrastructure-provider-section h2 {
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+}
+
+.provider-content {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.provider-content p {
+    font-size: 1.15rem;
+    color: var(--text-color);
+    margin-bottom: 1.5rem;
+    line-height: 1.8;
+}
+
+.provider-emphasis {
+    font-weight: 600;
+    color: var(--primary-color);
+    font-size: 1.2rem !important;
+    margin-top: 2rem;
+}
+
+/* Capabilities Section */
+.capabilities-section {
+    background-color: var(--white);
+}
+
+.capabilities-section h2 {
+    font-size: 2.5rem;
+    margin-bottom: 3rem;
+    text-align: center;
+}
+
+.capabilities-grid-cards {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2.5rem;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.capability-card {
+    background-color: var(--white);
+    border: 2px solid var(--border-color);
+    border-radius: 12px;
+    padding: 2.5rem;
+    transition: all 0.3s ease;
+}
+
+.capability-card:hover {
+    border-color: var(--secondary-color);
+    box-shadow: 0 8px 16px -4px rgba(59, 130, 246, 0.2);
+    transform: translateY(-4px);
+}
+
+.capability-icon {
+    width: 56px;
+    height: 56px;
+    border-radius: 50%;
+    background-color: var(--secondary-color);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 1.5rem;
+}
+
+.capability-icon svg {
+    width: 28px;
+    height: 28px;
+    color: white;
+}
+
+.capability-card h3 {
+    font-size: 1.4rem;
+    margin-bottom: 1rem;
+    color: var(--primary-color);
+}
+
+.capability-card p {
+    font-size: 1.05rem;
+    color: var(--text-color);
+    line-height: 1.7;
+}
+
+/* Outcomes Section */
+.outcomes-section {
+    background-color: var(--light-bg);
+}
+
+.outcomes-section h2 {
+    font-size: 2.5rem;
+    margin-bottom: 3rem;
+    text-align: center;
+}
+
+.outcomes-list {
+    list-style: none;
+    max-width: 700px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.5rem;
+}
+
+.outcomes-list li {
+    display: flex;
+    align-items: flex-start;
+    gap: 1rem;
+    font-size: 1.1rem;
+    color: var(--text-color);
+}
+
+.outcomes-list svg {
+    width: 24px;
+    height: 24px;
+    color: var(--secondary-color);
+    flex-shrink: 0;
+    margin-top: 2px;
+}
+
+/* Strategic Section */
+.strategic-section {
+    background-color: var(--white);
+    text-align: center;
+}
+
+.strategic-section h2 {
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+}
+
+.strategic-content {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.strategic-content p {
+    font-size: 1.15rem;
+    color: var(--text-color);
+    margin-bottom: 1.5rem;
+    line-height: 1.8;
+}
+
+.strategic-emphasis {
+    font-weight: 600;
+    color: var(--primary-color);
+    font-size: 1.2rem !important;
+    margin-top: 2rem;
+}
+
+/* Integration Section */
+.integration-section {
+    background-color: var(--light-bg);
+}
+
+.integration-section h2 {
+    font-size: 2.5rem;
+    margin-bottom: 3rem;
+    text-align: center;
+}
+
+.integration-steps {
+    max-width: 800px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.integration-step {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    padding: 2rem;
+    background-color: var(--white);
+    border-radius: 12px;
+    border: 2px solid var(--border-color);
+    transition: all 0.3s ease;
+}
+
+.integration-step:hover {
+    border-color: var(--secondary-color);
+    box-shadow: 0 4px 12px -2px rgba(59, 130, 246, 0.15);
+}
+
+.step-number {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background-color: var(--secondary-color);
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.8rem;
+    font-weight: 700;
+    flex-shrink: 0;
+}
+
+.step-content h3 {
+    font-size: 1.3rem;
+    color: var(--primary-color);
+    margin: 0;
+    font-weight: 600;
+}
+
+/* FAQ Section */
+.faq-section {
+    background-color: var(--white);
+}
+
+.faq-section h2 {
+    font-size: 2.5rem;
+    margin-bottom: 3rem;
+    text-align: center;
+}
+
+.faq-accordion {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.faq-item {
+    border: 2px solid var(--border-color);
+    border-radius: 8px;
+    margin-bottom: 1rem;
+    overflow: hidden;
+    transition: all 0.3s ease;
+}
+
+.faq-item.active {
+    border-color: var(--secondary-color);
+}
+
+.faq-question {
+    width: 100%;
+    padding: 1.5rem;
+    background-color: var(--white);
+    border: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+    font-size: 1.15rem;
+    font-weight: 600;
+    color: var(--primary-color);
+    text-align: left;
+    transition: background-color 0.3s ease;
+}
+
+.faq-question:hover {
+    background-color: var(--light-bg);
+}
+
+.faq-question span {
+    flex: 1;
+}
+
+.faq-icon {
+    width: 24px;
+    height: 24px;
+    color: var(--secondary-color);
+    transition: transform 0.3s ease;
+    flex-shrink: 0;
+    margin-left: 1rem;
+}
+
+.faq-item.active .faq-icon {
+    transform: rotate(180deg);
+}
+
+.faq-answer {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease;
+}
+
+.faq-item.active .faq-answer {
+    max-height: 500px;
+}
+
+.faq-answer p {
+    padding: 0 1.5rem 1.5rem;
+    font-size: 1.05rem;
+    color: var(--text-color);
+    line-height: 1.8;
+}
+
+/* Responsive Styles for Hospital Labs Page */
+@media (max-width: 968px) {
+    .hospital-hero h1 {
+        font-size: 2.5rem;
+    }
+
+    .hero-subheadline {
+        font-size: 1.1rem;
+    }
+
+    .capabilities-grid-cards {
+        grid-template-columns: 1fr;
+    }
+
+    .outcomes-list {
+        grid-template-columns: 1fr;
+    }
+
+    .integration-step {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .challenge-section h2,
+    .clinical-standards-section h2,
+    .infrastructure-provider-section h2,
+    .capabilities-section h2,
+    .outcomes-section h2,
+    .strategic-section h2,
+    .integration-section h2,
+    .faq-section h2 {
+        font-size: 2rem;
+    }
+}
 }
