@@ -1769,11 +1769,22 @@ footer {
 .closing-cta {
     display: flex;
     justify-content: center;
-    gap: 1rem;
+    gap: 1.5rem;
+    flex-wrap: wrap;
 }
 
 /* Responsive adjustments for Solutions page */
 @media (max-width: 768px) {
+    .closing-cta {
+        gap: 1rem;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .closing-cta .btn {
+        min-width: 200px;
+    }
+
     .solutions-hero h1 {
         font-size: 2.5rem;
     }
