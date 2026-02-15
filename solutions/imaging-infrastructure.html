@@ -15,6 +15,14 @@
 
     <!-- Styles -->
     <link rel="stylesheet" href="../css/style.css">
+    <style>
+        /* Responsive capabilities grid */
+        @media (max-width: 768px) {
+            .capabilities-table > div {
+                grid-template-columns: 1fr !important;
+            }
+        }
+    </style>
 </head>
 
 <body>
@@ -89,75 +97,81 @@
                 <p>Built for diagnostic AI teams deploying in real clinical environments</p>
             </div>
 
-            <div class="value-prop-grid">
-                <!-- Capability 1 -->
-                <div class="value-prop-item">
-                    <div class="value-prop-icon">
-                        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor"
-                            stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                            <polyline points="22 12 18 12 15 21 9 3 6 12 2 12"></polyline>
-                        </svg>
+            <div class="capabilities-table" style="max-width: 1200px; margin: 0 auto;">
+                <!-- Row 1: Top 3 capabilities -->
+                <div style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 2rem; margin-bottom: 2rem;">
+                    <!-- Capability 1 -->
+                    <div style="background: white; border: 1px solid #E2E8F0; border-radius: 12px; padding: 2rem; text-align: center;">
+                        <div style="margin-bottom: 1.5rem;">
+                            <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="var(--secondary-color)"
+                                stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="display: block; margin: 0 auto;">
+                                <polyline points="22 12 18 12 15 21 9 3 6 12 2 12"></polyline>
+                            </svg>
+                        </div>
+                        <h3 style="font-size: 1.125rem; margin-bottom: 1rem; color: var(--primary-color);">Reliability-Quantified Expert Consensus</h3>
+                        <p style="font-size: 0.938rem; line-height: 1.6; color: var(--text-color); margin: 0;">Every imaging annotation is validated through structured expert consensus modeling, ensuring measurable reliability and consistency across your dataset.</p>
                     </div>
-                    <h3>Reliability-Quantified Expert Consensus</h3>
-                    <p>Every imaging annotation is validated through structured expert consensus modeling, ensuring measurable reliability and consistency across your dataset.</p>
+
+                    <!-- Capability 2 -->
+                    <div style="background: white; border: 1px solid #E2E8F0; border-radius: 12px; padding: 2rem; text-align: center;">
+                        <div style="margin-bottom: 1.5rem;">
+                            <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="var(--secondary-color)"
+                                stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="display: block; margin: 0 auto;">
+                                <rect x="2" y="3" width="20" height="14" rx="2" ry="2"></rect>
+                                <line x1="8" y1="21" x2="16" y2="21"></line>
+                                <line x1="12" y1="17" x2="12" y2="21"></line>
+                            </svg>
+                        </div>
+                        <h3 style="font-size: 1.125rem; margin-bottom: 1rem; color: var(--primary-color);">Full Imaging Modality Support</h3>
+                        <p style="font-size: 0.938rem; line-height: 1.6; color: var(--text-color); margin: 0;">Native support for DICOM, NIfTI, volumetric imaging, and digital pathology enables seamless dataset construction across radiology and pathology workflows.</p>
+                    </div>
+
+                    <!-- Capability 3 -->
+                    <div style="background: white; border: 1px solid #E2E8F0; border-radius: 12px; padding: 2rem; text-align: center;">
+                        <div style="margin-bottom: 1.5rem;">
+                            <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="var(--secondary-color)"
+                                stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="display: block; margin: 0 auto;">
+                                <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
+                                <polyline points="14 2 14 8 20 8"></polyline>
+                                <line x1="16" y1="13" x2="8" y2="13"></line>
+                                <line x1="16" y1="17" x2="8" y2="17"></line>
+                                <polyline points="10 9 9 9 8 9"></polyline>
+                            </svg>
+                        </div>
+                        <h3 style="font-size: 1.125rem; margin-bottom: 1rem; color: var(--primary-color);">Dataset Provenance and Traceability</h3>
+                        <p style="font-size: 0.938rem; line-height: 1.6; color: var(--text-color); margin: 0;">Every dataset includes structured provenance tracking, enabling full visibility into annotation history, reviewer validation, and dataset version lineage.</p>
+                    </div>
                 </div>
 
-                <!-- Capability 2 -->
-                <div class="value-prop-item">
-                    <div class="value-prop-icon">
-                        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor"
-                            stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                            <rect x="2" y="3" width="20" height="14" rx="2" ry="2"></rect>
-                            <line x1="8" y1="21" x2="16" y2="21"></line>
-                            <line x1="12" y1="17" x2="12" y2="21"></line>
-                        </svg>
+                <!-- Row 2: Bottom 2 capabilities (centered) -->
+                <div style="display: grid; grid-template-columns: repeat(2, 1fr); gap: 2rem; max-width: 800px; margin: 0 auto;">
+                    <!-- Capability 4 -->
+                    <div style="background: white; border: 1px solid #E2E8F0; border-radius: 12px; padding: 2rem; text-align: center;">
+                        <div style="margin-bottom: 1.5rem;">
+                            <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="var(--secondary-color)"
+                                stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="display: block; margin: 0 auto;">
+                                <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path>
+                                <circle cx="9" cy="7" r="4"></circle>
+                                <path d="M23 21v-2a4 4 0 0 0-3-3.87"></path>
+                                <path d="M16 3.13a4 4 0 0 1 0 7.75"></path>
+                            </svg>
+                        </div>
+                        <h3 style="font-size: 1.125rem; margin-bottom: 1rem; color: var(--primary-color);">Subgroup Robustness Validation</h3>
+                        <p style="font-size: 0.938rem; line-height: 1.6; color: var(--text-color); margin: 0;">Trinzz identifies hidden performance risks by quantifying representation and reliability across patient populations, scanner types, and clinical subgroups.</p>
                     </div>
-                    <h3>Full Imaging Modality Support</h3>
-                    <p>Native support for DICOM, NIfTI, volumetric imaging, and digital pathology enables seamless dataset construction across radiology and pathology workflows.</p>
-                </div>
 
-                <!-- Capability 3 -->
-                <div class="value-prop-item">
-                    <div class="value-prop-icon">
-                        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor"
-                            stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                            <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
-                            <polyline points="14 2 14 8 20 8"></polyline>
-                            <line x1="16" y1="13" x2="8" y2="13"></line>
-                            <line x1="16" y1="17" x2="8" y2="17"></line>
-                            <polyline points="10 9 9 9 8 9"></polyline>
-                        </svg>
+                    <!-- Capability 5 -->
+                    <div style="background: white; border: 1px solid #E2E8F0; border-radius: 12px; padding: 2rem; text-align: center;">
+                        <div style="margin-bottom: 1.5rem;">
+                            <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="var(--secondary-color)"
+                                stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="display: block; margin: 0 auto;">
+                                <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path>
+                                <polyline points="22 4 12 14.01 9 11.01"></polyline>
+                            </svg>
+                        </div>
+                        <h3 style="font-size: 1.125rem; margin-bottom: 1rem; color: var(--primary-color);">Deployment-Ready Dataset Certification</h3>
+                        <p style="font-size: 0.938rem; line-height: 1.6; color: var(--text-color); margin: 0;">Datasets constructed on Trinzz infrastructure are structured for institutional validation, regulatory readiness, and clinical deployment.</p>
                     </div>
-                    <h3>Dataset Provenance and Traceability</h3>
-                    <p>Every dataset includes structured provenance tracking, enabling full visibility into annotation history, reviewer validation, and dataset version lineage.</p>
-                </div>
-
-                <!-- Capability 4 -->
-                <div class="value-prop-item">
-                    <div class="value-prop-icon">
-                        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor"
-                            stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                            <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path>
-                            <circle cx="9" cy="7" r="4"></circle>
-                            <path d="M23 21v-2a4 4 0 0 0-3-3.87"></path>
-                            <path d="M16 3.13a4 4 0 0 1 0 7.75"></path>
-                        </svg>
-                    </div>
-                    <h3>Subgroup Robustness Validation</h3>
-                    <p>Trinzz identifies hidden performance risks by quantifying representation and reliability across patient populations, scanner types, and clinical subgroups.</p>
-                </div>
-
-                <!-- Capability 5 -->
-                <div class="value-prop-item">
-                    <div class="value-prop-icon">
-                        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor"
-                            stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                            <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path>
-                            <polyline points="22 4 12 14.01 9 11.01"></polyline>
-                        </svg>
-                    </div>
-                    <h3>Deployment-Ready Dataset Certification</h3>
-                    <p>Datasets constructed on Trinzz infrastructure are structured for institutional validation, regulatory readiness, and clinical deployment.</p>
                 </div>
             </div>
         </div>
