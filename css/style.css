@@ -1497,473 +1497,601 @@ footer {
     }
 }
 
-/* ========================================
-   Enterprise Hospital Labs Page Styles
-   ======================================== */
+/* Solutions Pages - Clinical Imaging Infrastructure */
 
-/* Hospital Hero Section */
-.hospital-hero {
-    flex-direction: column;
-    text-align: center;
-}
-
-.hospital-hero .hero-text {
-    max-width: 900px;
-    margin: 0 auto;
-}
-
-.hospital-hero h1 {
-    font-size: 3.5rem;
-    margin-bottom: 1.5rem;
-}
-
-.hero-subheadline {
-    font-size: 1.2rem;
-    color: #64748B;
-    margin-bottom: 1.5rem;
-    line-height: 1.8;
-}
-
+/* Hero bullets for solutions pages */
 .hero-bullets {
     list-style: none;
-    margin: 2rem 0;
-    max-width: 700px;
-    margin-left: auto;
-    margin-right: auto;
-    text-align: left;
+    padding: 0;
+    margin: 1.5rem 0 2rem 0;
 }
 
 .hero-bullets li {
-    display: flex;
-    align-items: flex-start;
-    gap: 1rem;
-    margin-bottom: 1rem;
-    font-size: 1.05rem;
+    position: relative;
+    padding-left: 1.75rem;
+    margin-bottom: 0.75rem;
     color: var(--text-color);
+    line-height: 1.6;
 }
 
-.hero-bullets svg {
-    width: 24px;
-    height: 24px;
+.hero-bullets li::before {
+    content: "•";
+    position: absolute;
+    left: 0;
     color: var(--secondary-color);
-    flex-shrink: 0;
-    margin-top: 2px;
+    font-weight: bold;
+    font-size: 1.25rem;
 }
 
-/* Clinical Standards Section */
-.clinical-standards-section {
-    background-color: var(--light-bg);
-    text-align: center;
-}
-
-.clinical-standards-section h2 {
-    font-size: 2.5rem;
-    margin-bottom: 2rem;
-}
-
-.standards-content {
-    max-width: 800px;
-    margin: 0 auto;
-}
-
-.standards-content p {
-    font-size: 1.15rem;
-    color: var(--text-color);
-    margin-bottom: 1.5rem;
-    line-height: 1.8;
-}
-
-.standards-emphasis {
-    font-weight: 600;
-    color: var(--primary-color);
-    font-size: 1.2rem !important;
-    margin-top: 2rem;
-}
-
-/* Challenge Section */
-.challenge-section {
+/* Problem Section */
+.problem-section {
     background-color: var(--white);
 }
 
-.challenge-section h2 {
+.problem-content {
+/* Solutions Page Styles */
+.solutions-hero {
+    padding-top: 160px;
+    padding-bottom: 5rem;
+    background: linear-gradient(135deg, var(--light-bg) 0%, var(--white) 100%);
+}
+
+.solutions-hero .hero-text {
+    max-width: 900px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.solutions-hero h1 {
+    font-size: 3.5rem;
+    font-weight: 800;
+    margin-bottom: 1.5rem;
+    letter-spacing: -0.02em;
+}
+
+.solutions-hero p {
+    font-size: 1.25rem;
+    color: #64748B;
+    margin-bottom: 2.5rem;
+    line-height: 1.7;
+}
+
+.solutions-hero .hero-buttons {
+    justify-content: center;
+}
+
+/* Enterprise Trust Strip */
+.trust-strip-section {
+    background-color: var(--white);
+    padding: 2rem 0;
+    border-bottom: 1px solid var(--border-color);
+    text-align: center;
+}
+
+.trust-strip-title {
+    font-size: 0.95rem;
+    font-weight: 600;
+    color: var(--text-color);
+    margin-bottom: 0.5rem;
+}
+
+.trust-strip-badges {
+    font-size: 0.875rem;
+    font-weight: 500;
+    color: #64748B;
+}
+
+.barrier-section {
+    background-color: var(--white);
+}
+
+.barrier-section h2 {
     font-size: 2.5rem;
+    font-weight: 700;
     margin-bottom: 2rem;
     text-align: center;
 }
 
-.challenge-content {
+.barrier-content {
     max-width: 900px;
     margin: 0 auto;
 }
 
-.challenge-intro {
-    font-size: 1.15rem;
-    color: var(--text-color);
+.problem-content h2 {
+    font-size: 2.5rem;
+    color: var(--primary-color);
     margin-bottom: 2rem;
-    text-align: center;
 }
 
-.challenge-list {
-    list-style: none;
-    margin: 2rem 0;
-}
-
-.challenge-list li {
-    display: flex;
-    align-items: flex-start;
-    gap: 1rem;
+.problem-content p {
+.barrier-content p {
+    font-size: 1.1rem;
+    color: var(--text-color);
     margin-bottom: 1.5rem;
-    font-size: 1.1rem;
-    color: var(--text-color);
-    padding: 1rem;
-    background-color: #FEF2F2;
-    border-radius: 8px;
-    border-left: 4px solid #EF4444;
-}
-
-.challenge-list svg {
-    width: 24px;
-    height: 24px;
-    color: #EF4444;
-    flex-shrink: 0;
-    margin-top: 2px;
-}
-
-.challenge-conclusion {
-    font-size: 1.1rem;
-    color: var(--text-color);
-    margin-top: 2rem;
-    text-align: center;
     line-height: 1.8;
 }
 
-/* Infrastructure Provider Section */
-.infrastructure-provider-section {
+.barrier-emphasis {
+    font-weight: 600;
+    color: var(--primary-color);
+}
+
+/* Internal Infrastructure Bottleneck Section */
+.bottleneck-section {
     background-color: var(--light-bg);
+}
+
+.bottleneck-section h2 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-bottom: 2rem;
     text-align: center;
 }
 
-.infrastructure-provider-section h2 {
-    font-size: 2.5rem;
-    margin-bottom: 2rem;
-}
-
-.provider-content {
-    max-width: 800px;
+.bottleneck-content {
+    max-width: 900px;
     margin: 0 auto;
 }
 
-.provider-content p {
-    font-size: 1.15rem;
+.bottleneck-content p {
+    font-size: 1.1rem;
     color: var(--text-color);
     margin-bottom: 1.5rem;
     line-height: 1.8;
 }
 
-.provider-emphasis {
+.problem-list {
+    list-style: none;
+    padding: 0;
+    margin: 1.5rem 0;
+}
+
+.problem-list li {
+    position: relative;
+    padding-left: 1.75rem;
+    margin-bottom: 0.75rem;
+    color: var(--text-color);
+    font-size: 1.1rem;
+    line-height: 1.6;
+}
+
+.problem-list li::before {
+.bottleneck-list {
+    list-style: none;
+    margin: 1.5rem 0;
+    padding-left: 0;
+}
+
+.bottleneck-list li {
+    font-size: 1.1rem;
+    color: var(--text-color);
+    margin-bottom: 1rem;
+    padding-left: 1.5rem;
+    position: relative;
+    line-height: 1.8;
+}
+
+.bottleneck-list li:before {
+    content: "•";
+    position: absolute;
+    left: 0;
+    color: var(--secondary-color);
+    font-weight: bold;
+    font-size: 1.25rem;
+}
+
+/* Solution Section */
+.solution-section {
+    background-color: var(--light-bg);
+}
+
+.solution-content {
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.solution-content h2 {
+    font-size: 2.5rem;
+    color: var(--primary-color);
+    margin-bottom: 2rem;
+}
+
+.solution-content p {
+}
+
+.bottleneck-emphasis {
     font-weight: 600;
     color: var(--primary-color);
-    font-size: 1.2rem !important;
-    margin-top: 2rem;
+}
+
+.infrastructure-layer-section {
+    background-color: var(--light-bg);
+}
+
+.infrastructure-layer-section h2 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-bottom: 2rem;
+    text-align: center;
+}
+
+.infrastructure-content {
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.infrastructure-content p {
+    font-size: 1.1rem;
+    color: var(--text-color);
+    margin-bottom: 1.5rem;
+    line-height: 1.8;
+}
+
+.solution-list {
+    list-style: none;
+    padding: 0;
+    margin: 1.5rem 0;
+}
+
+.solution-list li {
+    position: relative;
+    padding-left: 1.75rem;
+    margin-bottom: 0.75rem;
+    color: var(--text-color);
+    font-size: 1.1rem;
+    line-height: 1.6;
+}
+
+.solution-list li::before {
+    content: "✓";
+    position: absolute;
+    left: 0;
+    color: #10B981;
+    font-weight: bold;
+    font-size: 1.25rem;
 }
 
 /* Capabilities Section */
 .capabilities-section {
     background-color: var(--white);
-}
-
-.capabilities-section h2 {
-    font-size: 2.5rem;
-    margin-bottom: 3rem;
     text-align: center;
 }
 
-.capabilities-grid-cards {
+.capabilities-header {
+    max-width: 800px;
+    margin: 0 auto 4rem;
+}
+
+.capabilities-header h2 {
+    font-size: 2.5rem;
+    color: var(--primary-color);
+}
+
+.capabilities-grid {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+.infrastructure-solutions-section {
+    background-color: var(--white);
+}
+
+.solutions-header {
+    text-align: center;
+    margin-bottom: 4rem;
+}
+
+.solutions-header h2 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+}
+
+.solutions-header p {
+    font-size: 1.1rem;
+    color: #64748B;
+}
+
+.solutions-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
     gap: 2.5rem;
-    max-width: 1000px;
+    max-width: 1200px;
     margin: 0 auto;
 }
 
 .capability-card {
+    background: var(--white);
+    padding: 2.5rem;
+    border-radius: 12px;
+    text-align: left;
+    border: 1px solid var(--border-color);
+    transition: box-shadow 0.3s ease, transform 0.3s ease;
+}
+
+.capability-card:hover {
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    transform: translateY(-4px);
+}
+
+.capability-icon {
+    width: 64px;
+    height: 64px;
+    border-radius: 50%;
+    background-color: var(--secondary-color);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 1.5rem;
+    color: white;
+}
+
+.solution-card {
     background-color: var(--white);
-    border: 2px solid var(--border-color);
+    border: 1px solid var(--border-color);
     border-radius: 12px;
     padding: 2.5rem;
     transition: all 0.3s ease;
 }
 
-.capability-card:hover {
-    border-color: var(--secondary-color);
-    box-shadow: 0 8px 16px -4px rgba(59, 130, 246, 0.2);
-    transform: translateY(-4px);
+.solution-card:hover {
+    box-shadow: 0 10px 30px -10px rgba(0, 0, 0, 0.1);
+    transform: translateY(-5px);
 }
 
-.capability-icon {
+.solution-icon {
     width: 56px;
     height: 56px;
     border-radius: 50%;
-    background-color: var(--secondary-color);
+    background-color: #EFF6FF;
     display: flex;
     align-items: center;
     justify-content: center;
     margin-bottom: 1.5rem;
-}
-
-.capability-icon svg {
-    width: 28px;
-    height: 28px;
     color: white;
 }
 
+.capability-icon svg {
+    width: 32px;
+    height: 32px;
+}
+
 .capability-card h3 {
-    font-size: 1.4rem;
-    margin-bottom: 1rem;
+    font-size: 1.35rem;
     color: var(--primary-color);
+    margin-bottom: 1rem;
+    font-weight: 700;
 }
 
 .capability-card p {
-    font-size: 1.05rem;
+    font-size: 1rem;
+    color: #64748B;
+    line-height: 1.7;
+}
+
+/* ICP Section */
+.icp-section {
+    background-color: var(--light-bg);
+    text-align: center;
+}
+
+.icp-header {
+    max-width: 800px;
+    margin: 0 auto 4rem;
+}
+
+.icp-header h2 {
+    font-size: 2.5rem;
+    color: var(--primary-color);
+}
+
+.icp-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.icp-card {
+    background: var(--white);
+    padding: 2.5rem;
+    border-radius: 12px;
+    text-align: left;
+    border: 1px solid var(--border-color);
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.icp-card h3 {
+    font-size: 1.35rem;
+    color: var(--primary-color);
+    font-weight: 700;
+    margin-bottom: 0.5rem;
+}
+
+.icp-card p {
+    font-size: 1rem;
+    color: #64748B;
+    line-height: 1.7;
+    flex-grow: 1;
+}
+
+.icp-card .btn {
+    margin-top: auto;
+    width: 100%;
+    text-align: center;
+}
+
+/* Trust Importance Section */
+.trust-importance-section {
+    background-color: var(--white);
+}
+
+.trust-importance-content {
+}
+
+.solution-icon svg {
+    width: 28px;
+    height: 28px;
+    color: var(--secondary-color);
+}
+
+.solution-card h3 {
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin-bottom: 0.5rem;
+    color: var(--primary-color);
+}
+
+.solution-subtitle {
+    font-size: 0.95rem;
+    color: var(--secondary-color);
+    font-weight: 600;
+    margin-bottom: 1rem;
+}
+
+.solution-description {
+    font-size: 1rem;
     color: var(--text-color);
     line-height: 1.7;
+    margin-bottom: 1.5rem;
+}
+
+.solution-link {
+    font-size: 1rem;
+    color: var(--secondary-color);
+    font-weight: 600;
+    transition: color 0.3s ease;
+    display: inline-block;
+}
+
+.solution-link:hover {
+    color: #2563EB;
+}
+
+.closing-section {
+    background: linear-gradient(135deg, var(--light-bg) 0%, var(--white) 100%);
+}
+
+.closing-content {
+    max-width: 900px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.trust-importance-content h2 {
+    font-size: 2.5rem;
+    color: var(--primary-color);
+    margin-bottom: 2rem;
+}
+
+.trust-importance-content p {
+.closing-content h2 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-bottom: 1.5rem;
+}
+
+.closing-content p {
+    font-size: 1.1rem;
+    color: var(--text-color);
+    margin-bottom: 1.5rem;
+    line-height: 1.8;
 }
 
 /* Outcomes Section */
 .outcomes-section {
-    background-color: var(--light-bg);
+    background-color: var(--secondary-color);
+    color: white;
+    text-align: center;
 }
 
-.outcomes-section h2 {
+.outcomes-header h2 {
+    color: white;
     font-size: 2.5rem;
     margin-bottom: 3rem;
-    text-align: center;
 }
 
 .outcomes-list {
     list-style: none;
-    max-width: 700px;
+    padding: 0;
+    max-width: 800px;
     margin: 0 auto;
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 1.5rem;
+    text-align: left;
 }
 
 .outcomes-list li {
-    display: flex;
-    align-items: flex-start;
-    gap: 1rem;
-    font-size: 1.1rem;
-    color: var(--text-color);
-}
-
-.outcomes-list svg {
-    width: 24px;
-    height: 24px;
-    color: var(--secondary-color);
-    flex-shrink: 0;
-    margin-top: 2px;
-}
-
-/* Strategic Section */
-.strategic-section {
-    background-color: var(--white);
-    text-align: center;
-}
-
-.strategic-section h2 {
-    font-size: 2.5rem;
-    margin-bottom: 2rem;
-}
-
-.strategic-content {
-    max-width: 800px;
-    margin: 0 auto;
-}
-
-.strategic-content p {
-    font-size: 1.15rem;
-    color: var(--text-color);
+    position: relative;
+    padding-left: 2.5rem;
     margin-bottom: 1.5rem;
-    line-height: 1.8;
+    font-size: 1.2rem;
+    line-height: 1.6;
 }
 
-.strategic-emphasis {
-    font-weight: 600;
-    color: var(--primary-color);
-    font-size: 1.2rem !important;
-    margin-top: 2rem;
-}
-
-/* Integration Section */
-.integration-section {
-    background-color: var(--light-bg);
-}
-
-.integration-section h2 {
-    font-size: 2.5rem;
-    margin-bottom: 3rem;
-    text-align: center;
-}
-
-.integration-steps {
-    max-width: 800px;
-    margin: 0 auto;
-    display: flex;
-    flex-direction: column;
-    gap: 2rem;
-}
-
-.integration-step {
-    display: flex;
-    align-items: center;
-    gap: 2rem;
-    padding: 2rem;
-    background-color: var(--white);
-    border-radius: 12px;
-    border: 2px solid var(--border-color);
-    transition: all 0.3s ease;
-}
-
-.integration-step:hover {
-    border-color: var(--secondary-color);
-    box-shadow: 0 4px 12px -2px rgba(59, 130, 246, 0.15);
-}
-
-.step-number {
-    width: 60px;
-    height: 60px;
-    border-radius: 50%;
-    background-color: var(--secondary-color);
+.outcomes-list li::before {
+    content: "✓";
+    position: absolute;
+    left: 0;
     color: white;
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+
+/* Mobile Responsive for Solutions Pages */
+@media (max-width: 768px) {
+    .problem-content h2,
+    .solution-content h2,
+    .capabilities-header h2,
+    .icp-header h2,
+    .trust-importance-content h2,
+    .outcomes-header h2 {
+        font-size: 2rem;
+    }
+
+    .capabilities-grid,
+    .icp-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .outcomes-list li {
+        font-size: 1.1rem;
+.closing-cta {
     display: flex;
-    align-items: center;
     justify-content: center;
-    font-size: 1.8rem;
-    font-weight: 700;
-    flex-shrink: 0;
+    gap: 1.5rem;
+    flex-wrap: wrap;
 }
 
-.step-content h3 {
-    font-size: 1.3rem;
-    color: var(--primary-color);
-    margin: 0;
-    font-weight: 600;
-}
+/* Responsive adjustments for Solutions page */
+@media (max-width: 768px) {
+    .closing-cta {
+        gap: 1rem;
+        flex-direction: column;
+        align-items: center;
+    }
 
-/* FAQ Section */
-.faq-section {
-    background-color: var(--white);
-}
+    .closing-cta .btn {
+        min-width: 200px;
+    }
 
-.faq-section h2 {
-    font-size: 2.5rem;
-    margin-bottom: 3rem;
-    text-align: center;
-}
-
-.faq-accordion {
-    max-width: 800px;
-    margin: 0 auto;
-}
-
-.faq-item {
-    border: 2px solid var(--border-color);
-    border-radius: 8px;
-    margin-bottom: 1rem;
-    overflow: hidden;
-    transition: all 0.3s ease;
-}
-
-.faq-item.active {
-    border-color: var(--secondary-color);
-}
-
-.faq-question {
-    width: 100%;
-    padding: 1.5rem;
-    background-color: var(--white);
-    border: none;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    cursor: pointer;
-    font-size: 1.15rem;
-    font-weight: 600;
-    color: var(--primary-color);
-    text-align: left;
-    transition: background-color 0.3s ease;
-}
-
-.faq-question:hover {
-    background-color: var(--light-bg);
-}
-
-.faq-question span {
-    flex: 1;
-}
-
-.faq-icon {
-    width: 24px;
-    height: 24px;
-    color: var(--secondary-color);
-    transition: transform 0.3s ease;
-    flex-shrink: 0;
-    margin-left: 1rem;
-}
-
-.faq-item.active .faq-icon {
-    transform: rotate(180deg);
-}
-
-.faq-answer {
-    max-height: 0;
-    overflow: hidden;
-    transition: max-height 0.3s ease;
-}
-
-.faq-item.active .faq-answer {
-    max-height: 500px;
-}
-
-.faq-answer p {
-    padding: 0 1.5rem 1.5rem;
-    font-size: 1.05rem;
-    color: var(--text-color);
-    line-height: 1.8;
-}
-
-/* Responsive Styles for Hospital Labs Page */
-@media (max-width: 968px) {
-    .hospital-hero h1 {
+    .solutions-hero h1 {
         font-size: 2.5rem;
     }
 
-    .hero-subheadline {
+    .solutions-hero p {
         font-size: 1.1rem;
     }
 
-    .capabilities-grid-cards {
+    .solutions-grid {
         grid-template-columns: 1fr;
+        gap: 2rem;
     }
 
-    .outcomes-list {
-        grid-template-columns: 1fr;
+    .solution-card {
+        padding: 2rem;
     }
 
-    .integration-step {
-        flex-direction: column;
-        text-align: center;
-    }
-
-    .challenge-section h2,
-    .clinical-standards-section h2,
-    .infrastructure-provider-section h2,
-    .capabilities-section h2,
-    .outcomes-section h2,
-    .strategic-section h2,
-    .integration-section h2,
-    .faq-section h2 {
+    .closing-content h2 {
         font-size: 2rem;
     }
 }
