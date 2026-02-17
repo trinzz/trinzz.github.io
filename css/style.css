@@ -885,7 +885,7 @@ footer {
     .enterprise-list li {
         font-size: 1rem;
     }
-    
+
     .enterprise-image {
         display: none;
     }
@@ -959,40 +959,6 @@ footer {
         grid-template-columns: 1fr;
         gap: 2rem;
     }
-}
-
-/* Old CTA Section (deprecated) */
-.cta-section {
-    text-align: center;
-    padding: 6rem 0;
-}
-
-.cta-content {
-    max-width: 800px;
-    margin: 0 auto;
-}
-
-.cta-section h2 {
-    font-size: 2.5rem;
-    margin-bottom: 1.5rem;
-}
-
-.cta-text {
-    font-size: 1.1rem;
-    color: #64748B;
-    margin-bottom: 2.5rem;
-    line-height: 1.8;
-}
-
-.btn-dark {
-    background-color: #0F172A;
-    color: white;
-    font-weight: 500;
-    transition: background 0.3s;
-}
-
-.btn-dark:hover {
-    background-color: #1E293B;
 }
 
 /* Backed By Section */
