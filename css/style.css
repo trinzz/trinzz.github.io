@@ -66,7 +66,9 @@ ul {
 }
 
 .btn {
-    display: inline-block;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
     padding: 0.75rem 1.5rem;
     border-radius: 6px;
     font-weight: 500;
@@ -93,6 +95,28 @@ ul {
 
 .btn-outline:hover {
     background-color: var(--secondary-color);
+    color: var(--white);
+}
+
+.btn-secondary {
+    background-color: var(--white);
+    color: var(--secondary-color);
+    border: 1px solid var(--secondary-color);
+}
+
+.btn-secondary:hover {
+    background-color: var(--secondary-color);
+    color: var(--white);
+}
+
+.btn-dark {
+    background-color: var(--primary-color);
+    color: var(--white);
+    border: 1px solid var(--primary-color);
+}
+
+.btn-dark:hover {
+    background-color: #1E293B;
     color: var(--white);
 }
 
@@ -793,7 +817,21 @@ footer {
 .enterprise-content h2 {
     font-size: 2.5rem;
     color: var(--primary-color);
+    margin-bottom: 1rem;
+}
+
+.enterprise-subtitle {
+    font-size: 1.25rem;
+    color: #64748B;
+    margin-bottom: 1.5rem;
+    font-weight: 500;
+}
+
+.enterprise-intro {
+    font-size: 1.1rem;
+    color: var(--text-color);
     margin-bottom: 2rem;
+    line-height: 1.8;
 }
 
 .enterprise-list {
@@ -847,40 +885,80 @@ footer {
     .enterprise-list li {
         font-size: 1rem;
     }
+
+    .enterprise-image {
+        display: none;
+    }
 }
 
-/* Labeling Services CTA Section */
-.cta-section {
+/* Labeling Services Section */
+.labeling-services-section {
+    background-color: var(--light-bg);
     text-align: center;
-    padding: 6rem 0;
 }
 
-.cta-content {
-    max-width: 800px;
+.labeling-services-content {
+    max-width: 1000px;
     margin: 0 auto;
 }
 
-.cta-section h2 {
+.labeling-services-content h2 {
     font-size: 2.5rem;
-    margin-bottom: 1.5rem;
+    color: var(--primary-color);
+    margin-bottom: 3rem;
+    line-height: 1.3;
 }
 
-.cta-text {
-    font-size: 1.1rem;
-    color: #64748B;
-    margin-bottom: 2.5rem;
-    line-height: 1.8;
+.labeling-services-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 3rem;
+    margin-bottom: 3rem;
 }
 
-.btn-dark {
-    background-color: #0F172A;
-    color: white;
-    font-weight: 500;
-    transition: background 0.3s;
+.labeling-service-item {
+    text-align: center;
 }
 
-.btn-dark:hover {
-    background-color: #1E293B;
+.service-icon {
+    width: 64px;
+    height: 64px;
+    margin: 0 auto 1.5rem;
+    background-color: var(--white);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+}
+
+.service-icon svg {
+    width: 32px;
+    height: 32px;
+    color: var(--secondary-color);
+}
+
+.labeling-service-item h3 {
+    font-size: 1.25rem;
+    color: var(--primary-color);
+    line-height: 1.5;
+}
+
+.labeling-services-content .btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+}
+
+@media (max-width: 768px) {
+    .labeling-services-content h2 {
+        font-size: 1.75rem;
+    }
+    
+    .labeling-services-grid {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+    }
 }
 
 /* Backed By Section */
