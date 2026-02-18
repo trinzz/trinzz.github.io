@@ -1,0 +1,169 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Trinzz — Clinical Imaging Infrastructure • Volumetric Imaging</title>
+  <link rel="stylesheet" href="assets/css/styles.css" />
+  <link
+  href="https://cdn.jsdelivr.net/npm/remixicon@4.9.0/fonts/remixicon.css"
+  rel="stylesheet"
+/>
+</head>
+<body class="volumetric">
+
+  <div class="topbar">
+    <div class="container">
+      <div class="marquee">
+        <div class="marquee-content" id="marqueeContent">
+          <!-- Announcements will be injected here -->
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div id="header-placeholder"></div>
+
+<main>
+  <section class="hero">
+    <div class="container">
+      <div class="eyebrow"><span class="dot"></span> Clinical Imaging Infrastructure • Volumetric Imaging</div>
+      <h1 class="h1" data-reveal>3D imaging reliability requires volumetric QA — not 2D labeling at scale.</h1>
+      <p class="lead" data-reveal>CT/MRI/PET/3D ultrasound fails when slice-level annotation ignores 3D continuity, protocols drift, or QC is not volumetric. Trinzz builds 3D-first pipelines: volumetric SOPs, continuity/topology checks, multi-expert consensus, and release gates — so models generalize across scanners, sites, and time.</p>
+
+      <div class="trustStrip" data-reveal>
+        <span class="badge"><i></i> SOC 2 Type II</span>
+        <span class="badge"><i></i> ISO 27001:2022</span>
+        <span class="badge"><i></i> HIPAA aligned</span>
+        <span class="badge"><i></i> PHI controls + audit logs</span>
+        <span class="badge"><i></i> Versioned releases</span>
+      </div>
+
+      <div class="heroGrid" data-reveal>
+        <div class="card pad" data-tilt>
+          <h2 class="h2">Imaging annotation — engineered for deployment</h2>
+          <p class="muted">
+            Trinzz turns imaging annotation into a governed reliability system: AI assists, experts validate,
+            agreement is quantified, QC is systematic, and releases ship with evidence.
+          </p>
+          <div class="grid2" style="margin-top:14px">
+            <div class="item"><b>Clinical‑grade ground truth</b><span>Expert validation + adjudication + consensus confidence — per case.</span></div>
+            <div class="item"><b>Reliability scoring (CG‑DRS)</b><span>Release gates backed by quality, traceability, and drift readiness metrics.</span></div>
+            <div class="item"><b>Evidence Pack</b><span>QC report, consensus report, lineage export, monitoring spec.</span></div>
+            <div class="item"><b>Monitoring loop</b><span>Drift triggers + edge‑case loopback to continuously improve.</span></div>
+          </div>
+        </div>
+
+        <div class="card pad" data-tilt>
+          <div class="diagram" data-parallax="10">
+            <img src="assets/diagrams/hero_volumetric.png" alt="Clinical Imaging Infrastructure • Volumetric Imaging annotation lifecycle diagram"/>
+            <div class="diagramCaption">Clinical‑grade lifecycle: model assist + expert validation + QC/consensus + release gate.</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container">
+      <div class="sectionTop" data-reveal>
+        <div>
+          <div class="eyebrow"><span class="dot"></span> 3D‑first reliability system</div>
+          <h2 class="h2">Volumetric QA that prevents continuity failures</h2>
+          <p class="muted">This is what turns a dataset into something procurement + clinical validation can sign off on.</p>
+        </div>
+        <div class="right">
+          <span class="chip">Traceability</span><span class="chip">Consensus</span><span class="chip">QC</span><span class="chip">Monitoring</span>
+        </div>
+      </div>
+      <div class="grid2"><div class="item"><b>Volumetric SOP Enforcement</b><span>3D labeling standards applied across slices, phases, and sequences.</span></div><div class="item"><b>3D Consistency QC</b><span>Topology/continuity checks and volume-level sanity metrics.</span></div><div class="item"><b>Protocol Governance</b><span>Sequence/phase metadata validated against acquisition specs.</span></div><div class="item"><b>Subgroup Robustness</b><span>Worst-group gaps (site/scanner/protocol) measured and remediated.</span></div><div class="item"><b>Shift Readiness Monitoring</b><span>Baseline distributions per protocol + drift triggers when acquisition mix changes.</span></div><div class="item"><b>Release Gates + Evidence Pack</b><span>Versioned 3D releases with manifests, QC/consensus reports, monitoring spec.</span></div></div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container">
+      <div class="sectionTop" data-reveal>
+        <div>
+          
+  <section class="section">
+    <div class="container">
+      <div class="sectionTop" data-reveal>
+        <div>
+          <div class="eyebrow"><span class="dot"></span> 3D QA checklist</div>
+          <h2 class="h2">What “volumetric QC” actually means</h2>
+          <p class="muted">This is why 3D datasets can’t be treated like 2D labeling at scale.</p>
+        </div>
+        <div class="right"><span class="chip">Topology</span><span class="chip">Continuity</span><span class="chip">Protocol bins</span></div>
+      </div>
+      <div class="grid3">
+        <div class="item"><b>Continuity checks</b><span>Slice-to-slice consistency, hole detection, discontinuity flags.</span></div>
+        <div class="item"><b>Topology + geometry</b><span>Anatomical plausibility checks on masks and volumes.</span></div>
+        <div class="item"><b>Protocol governance</b><span>Contrast phases/sequences validated; drift triggers when acquisition mix shifts.</span></div>
+      </div>
+      <div class="note"><b>Deployability lever:</b> we quantify worst-protocol and worst-site gaps before models meet real hospitals.</div>
+    </div>
+  </section>
+<div class="eyebrow"><span class="dot"></span> Use cases</div>
+          <h2 class="h2">Where this should convert</h2>
+          <p class="muted">Written for enterprise imaging teams evaluating deployment readiness.</p>
+        </div>
+        <div class="right">
+          <span class="chip">Hospitals</span><span class="chip">Diagnostics networks</span><span class="chip">Med‑AI enterprises</span>
+        </div>
+      </div>
+      <div class="grid3"><div class="item"><b>Organ & lesion segmentation</b><span>Volume-first QC prevents discontinuities and inconsistent masks.</span></div><div class="item"><b>Multi-phase CT/MRI programs</b><span>Govern phases/sequences so training is defensible and reproducible.</span></div><div class="item"><b>Protocol/scanner generalization</b><span>Track protocol bins and reduce worst-site failures.</span></div><div class="item"><b>Production monitoring readiness</b><span>Define triggers before deployment to prevent silent degradation.</span></div><div class="item"><b>Benchmarking vendor models</b><span>Evaluate dataset reliability before comparisons.</span></div><div class="item"><b>3D foundation model pretraining</b><span>Curate large 3D corpora with strict provenance and QC.</span></div></div>
+    </div>
+  </section>
+
+  <section id="cta" class="section">
+    <div class="container">
+      <div class="card pad">
+        <div class="sectionTop" style="margin-bottom:8px">
+          <div>
+            <div class="eyebrow"><span class="dot"></span> Evidence pack</div>
+            <h2 class="h2">What you get with every release</h2>
+            <p class="muted">Evidence reduces “trust debates” to artifacts.</p>
+          </div>
+          <div class="right">
+            <span class="chip">QC report</span><span class="chip">Consensus report</span><span class="chip">Lineage export</span><span class="chip">Monitoring spec</span>
+          </div>
+        </div>
+        <div class="grid2">
+          <div>
+            <ul class="list"><li>Volumetric manifest + version hash + deterministic release notes</li><li>3D QC report: topology/continuity checks, volumetric sanity metrics, pass rates</li><li>Consensus report: multi-expert adjudication + confidence measures</li><li>Protocol governance memo: phase/sequence metadata + SOP mapping</li><li>Subgroup robustness report: worst-group gaps across bins</li><li>Monitoring spec: drift thresholds for protocol mix and acquisition changes</li></ul>
+            <div class="note"><b>Release Gate:</b> Pass / Conditional / Fail based on QC strength, consensus confidence, and traceability completeness.</div>
+          </div>
+          <div class="video">
+            <div>
+              <div class="play"></div>
+              <div style="font-size:15px; font-weight:950; color:var(--text)">Video placeholder</div>
+              <div class="muted" style="margin-top:6px">Embed a short demo + a reliability audit offer at the end.</div>
+            </div>
+          </div>
+        </div>
+
+        <div style="margin-top:14px" class="ctaBar">
+          <div>
+            <b>Request a Reliability Audit</b>
+            <span>Share a dataset manifest. We return CG‑DRS diagnostic + validation plan + monitoring triggers.</span>
+          </div>
+          <div style="display:flex; gap:10px; flex-wrap:wrap; justify-content:flex-end">
+            <a class="btn" href="#">Benchmark Your Dataset</a>
+            <a class="btn btnPrimary" href="#">Book a Regulatory Readiness Review</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+
+</main>
+
+<div id="footer-placeholder"></div>
+
+<script src="/components/loader.js"></script>
+<script src="/assets/app.js"></script>
+  <script src="assets/js/motion.js"></script>
+</body>
+</html>
