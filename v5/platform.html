@@ -1,0 +1,150 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <title>Trinzz Platform — Dataset Operating System</title>
+  <meta name="description" content="Trinzz Platform: ingestion, annotation ops, QC, governance, monitoring, and dataset releases for medical AI."/>
+  <link rel="stylesheet" href="/css/platform-styles.css"/>
+  <link
+  href="https://cdn.jsdelivr.net/npm/remixicon@4.9.0/fonts/remixicon.css"
+  rel="stylesheet"
+/>
+</head>
+<body>
+  <div class="topbar">
+    <div class="container">
+      <div class="marquee">
+        <div class="marquee-content" id="marqueeContent">
+          <!-- Announcements will be injected here -->
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div id="header-placeholder"></div>
+
+  <section class="hero">
+  <div class="container">
+    <div class='chips'><span class='chip'>System of Record</span><span class='chip'>Audit Trails</span><span class='chip'>Versioned Releases</span><span class='chip'>Expert Consensus</span></div>
+    <div class="h1">Trinzz Platform</div>
+    <div class="sub">A dataset operating system for biomedical AI: ingestion → annotation → QC → governance → monitoring → release.</div>
+    <div class='hero-cta'><a class='btn primary' href='contact.html'>Book a demo</a><a class='btn' href='reliability.html#request-audit'>Request a Reliability Audit</a></div>
+    
+  </div>
+</section>
+
+<section class="section">
+  <div class="container">
+    <div class="kicker">Overview</div>
+    <div class="h2">One platform for building defensible datasets.</div>
+    <div class="p">Trinzz is designed for environments where “good enough” data becomes clinical risk. Every action produces evidence: who changed what, why it changed, and what quality gates it passed.</div>
+
+    <div class="grid3" style="margin-top:18px;">
+      <div class="card"><div class="title">Traceability graph</div><div class="desc">Provenance → transformations → labels → reviews → releases, captured end-to-end.</div></div>
+      <div class="card"><div class="title">Quality gates</div><div class="desc">Sampling plans, QC rules, acceptance thresholds, and release criteria.</div></div>
+      <div class="card"><div class="title">Evidence packs</div><div class="desc">Exportable artifacts for audits, clinical validation, and customer due diligence.</div></div>
+    </div>
+  </div>
+</section>
+
+<section class="section border" id="ingestion">
+  <div class="container">
+    <div class="kicker">Module</div>
+    <div class="h2">Ingestion & De‑Identification</div>
+    <div class="p">Normalize multimodal data from multiple sites while preserving clinical context and enforcing privacy controls. Capture metadata and provenance so every asset can be traced back to its origin and transformation steps.</div>
+
+    <table class="table" style="margin-top:16px;">
+      <tr><th>Capability</th><th>What it enables</th></tr>
+      <tr><td>Format normalization (DICOM / NIfTI / WSI / US)</td><td>Unified pipelines across modalities and vendors</td></tr>
+      <tr><td>De‑ID workflows + PHI handling patterns</td><td>Privacy-safe operations with documented controls</td></tr>
+      <tr><td>Provenance capture</td><td>Lineage from source export to final dataset</td></tr>
+      <tr><td>Metadata standardization</td><td>Searchable cohorts, consistent training/eval splits</td></tr>
+    </table>
+  </div>
+</section>
+
+<section class="section border" id="annotation">
+  <div class="container">
+    <div class="kicker">Module</div>
+    <div class="h2">Annotation Operations</div>
+    <div class="p">Define tasks, route work to appropriate expertise, and enforce review policies. Every annotation is paired with who labeled it, what guidelines were used, and what QC it passed.</div>
+
+    <div class="grid3" style="margin-top:18px;">
+      <div class="card"><div class="title">Task design</div><div class="desc">Protocols, label schemas, edge-case definitions, and training sets for labelers.</div></div>
+      <div class="card"><div class="title">Workforce orchestration</div><div class="desc">Credentialed experts, tiered review, SLAs, and throughput controls.</div></div>
+      <div class="card"><div class="title">Guideline enforcement</div><div class="desc">Built-in checks, required fields, and structured feedback loops.</div></div>
+    </div>
+  </div>
+</section>
+
+<section class="section border" id="qc">
+  <div class="container">
+    <div class="kicker">Module</div>
+    <div class="h2">QC & Clinical Consensus</div>
+    <div class="p">Replace subjective “looks good” reviews with measurable quality. Track disagreement, resolve disputes, and quantify concordance across reviewers.</div>
+
+    <div class="list">
+      <div class="li"><span class="dot"></span>Multi-pass review pipelines with escalation and dispute resolution</div>
+      <div class="li"><span class="dot"></span>Reviewer concordance metrics (e.g., κ), acceptance rates, and error taxonomies</div>
+      <div class="li"><span class="dot"></span>Targeted rework queues and guideline updates based on failure patterns</div>
+    </div>
+  </div>
+</section>
+
+<section class="section border" id="governance">
+  <div class="container">
+    <div class="kicker">Module</div>
+    <div class="h2">Governance & Dataset Lineage</div>
+    <div class="p">Treat datasets as regulated products: version, sign, reproduce, and defend. Maintain audit trails that connect every label to its evidence.</div>
+
+    <div class="grid3" style="margin-top:18px;">
+      <div class="card"><div class="title">Versioned releases</div><div class="desc">Immutable releases with change logs and reproducible builds.</div></div>
+      <div class="card"><div class="title">Access controls</div><div class="desc">Role-based permissions and least-privilege operating models.</div></div>
+      <div class="card"><div class="title">Exportable documentation</div><div class="desc">SOPs, policies, reviewer logs, and evidence for audits.</div></div>
+    </div>
+  </div>
+</section>
+
+<section class="section border" id="monitoring">
+  <div class="container">
+    <div class="kicker">Module</div>
+    <div class="h2">Monitoring & Drift Readiness</div>
+    <div class="p">Production reliability depends on detecting distribution shift early and having a defined intervention workflow. Trinzz provides measurable triggers and operational playbooks.</div>
+
+    <div class="grid3" style="margin-top:18px;">
+      <div class="card"><div class="title">PSI / drift triggers</div><div class="desc">Compare expected vs actual distributions by bins, set thresholds, and alert.</div></div>
+      <div class="card"><div class="title">Calibration tracking</div><div class="desc">Monitor confidence reliability over time and across cohorts.</div></div>
+      <div class="card"><div class="title">Edge case monitoring</div><div class="desc">Capture “unknown unknowns” through structured sampling and review.</div></div>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container">
+    <div class="cta-block">
+      <div class="h3">Want a platform walkthrough with your dataset?</div>
+      <div class="p">We’ll map your current pipeline, identify reliability risks, and show what “audit-ready” looks like in practice.</div>
+      <div class="hero-cta">
+        <a class="btn primary" href="contact.html">Book a demo</a>
+        <a class="btn" href="reliability.html#request-audit">Request a Reliability Audit</a>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="section border">
+  <div class="container">
+    <div class="kicker">FAQ</div>
+    <div class="h2">Common questions from clinical and enterprise buyers.</div>
+    <div class="faq" style="margin-top:16px;">
+      <details><summary>Do you provide annotators or only software?</summary><p>Both. Trinzz can run expert-in-the-loop programs and/or integrate with your existing workforce while enforcing QC and traceability.</p></details><details><summary>How do you make quality measurable?</summary><p>We define acceptance thresholds, sampling plans, and concordance metrics (e.g., κ) and export reports per release.</p></details><details><summary>Can you support multi-site, multi-device deployments?</summary><p>Yes. We standardize metadata, track distribution shift, and define monitoring triggers by site/device/cohort.</p></details>
+    </div>
+  </div>
+</section>
+
+<div id="footer-placeholder"></div>
+
+<script src="../../components/loader.js"></script>
+<script src="../../assets/app.js"></script>
+</body>
+</html>

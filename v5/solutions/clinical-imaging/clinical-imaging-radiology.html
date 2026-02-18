@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Trinzz — Clinical Imaging Infrastructure • Radiology AI</title>
+    <link rel="stylesheet" href="assets/css/styles.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@4.9.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body class="radiology">
+    <div class="topbar">
+      <div class="container">
+        <div class="marquee">
+          <div class="marquee-content" id="marqueeContent">
+            <!-- Announcements will be injected here -->
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="header-placeholder"></div>
+
+    <main>
+      <section class="hero">
+        <div class="container">
+          <div class="eyebrow">
+            <span class="dot"></span> Clinical Imaging Infrastructure •
+            Radiology AI
+          </div>
+          <h1 class="h1" data-reveal>
+            Radiology AI that survives deployment needs dataset reliability —
+            not just accuracy.
+          </h1>
+          <p class="lead" data-reveal>
+            Edge cases, scanner variation, protocol drift, and ambiguous ground
+            truth are what break radiology AI in production. Trinzz ships
+            radiology datasets as governed releases with quantified consensus,
+            traceability, release gates, and monitoring triggers — so your model
+            remains defensible and stable after deployment.
+          </p>
+
+          <div class="trustStrip" data-reveal>
+            <span class="badge"><i></i> SOC 2 Type II</span>
+            <span class="badge"><i></i> ISO 27001:2022</span>
+            <span class="badge"><i></i> HIPAA aligned</span>
+            <span class="badge"><i></i> PHI controls + audit logs</span>
+            <span class="badge"><i></i> Versioned releases</span>
+          </div>
+
+          <div class="heroGrid" data-reveal>
+            <div class="card pad" data-tilt>
+              <div class="diagram" data-parallax="10">
+                <img
+                  src="assets/diagrams/hero_radiology.png"
+                  alt="Clinical Imaging Infrastructure • Radiology AI annotation lifecycle diagram"
+                />
+                <div class="diagramCaption">
+                  Clinical‑grade lifecycle: model assist + expert validation +
+                  QC/consensus + release gate.
+                </div>
+              </div>
+            </div>
+
+            <div class="card pad" data-tilt>
+              <h2 class="h2">Imaging annotation — engineered for deployment</h2>
+              <p class="muted">
+                Trinzz turns imaging annotation into a governed reliability
+                system: AI assists, experts validate, agreement is quantified,
+                QC is systematic, and releases ship with evidence.
+              </p>
+              <div class="grid2" style="margin-top: 14px">
+                <div class="item">
+                  <b>Clinical‑grade ground truth</b
+                  ><span
+                    >Expert validation + adjudication + consensus confidence —
+                    per case.</span
+                  >
+                </div>
+                <div class="item">
+                  <b>Reliability scoring (CG‑DRS)</b
+                  ><span
+                    >Release gates backed by quality, traceability, and drift
+                    readiness metrics.</span
+                  >
+                </div>
+                <div class="item">
+                  <b>Evidence Pack</b
+                  ><span
+                    >QC report, consensus report, lineage export, monitoring
+                    spec.</span
+                  >
+                </div>
+                <div class="item">
+                  <b>Monitoring loop</b
+                  ><span
+                    >Drift triggers + edge‑case loopback to continuously
+                    improve.</span
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="container">
+          <div class="sectionTop" data-reveal>
+            <div>
+              <div class="eyebrow">
+                <span class="dot"></span> Radiology reliability controls
+              </div>
+              <h2 class="h2">What radiology teams actually need to deploy</h2>
+              <p class="muted">
+                This is what turns a dataset into something procurement +
+                clinical validation can sign off on.
+              </p>
+            </div>
+            <div class="right">
+              <span class="chip">Traceability</span
+              ><span class="chip">Consensus</span><span class="chip">QC</span
+              ><span class="chip">Monitoring</span>
+            </div>
+          </div>
+          <div class="grid3">
+            <div class="item">
+              <b>Clinical SOPs as Code</b
+              ><span
+                >Radiology labeling guidelines enforced as policies; exceptions
+                routed for adjudication.</span
+              >
+            </div>
+            <div class="item">
+              <b>Expert Consensus Engine</b
+              ><span
+                >Multi‑radiologist agreement (κ/α), dispute routing, and
+                confidence per case.</span
+              >
+            </div>
+            <div class="item">
+              <b>QC + Error Taxonomy</b
+              ><span
+                >Automated checks + structured error categories that drive
+                remediation.</span
+              >
+            </div>
+            <div class="item">
+              <b>Shift Readiness (Sites/Scanners)</b
+              ><span
+                >Baseline stratification + drift thresholds (e.g., PSI) across
+                protocols/scanners.</span
+              >
+            </div>
+            <div class="item">
+              <b>Traceability & Lineage</b
+              ><span
+                >Provenance, reviewer identity, SOP references, timestamps —
+                audit‑ready end‑to‑end.</span
+              >
+            </div>
+            <div class="item">
+              <b>Release Gates + Monitoring</b
+              ><span
+                >Pass/Conditional/Fail gates + post‑release monitoring policies
+                to prevent regressions.</span
+              >
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="container">
+          <div class="sectionTop" data-reveal>
+            <div>
+              <section class="section">
+                <div class="container">
+                  <div class="sectionTop" data-reveal>
+                    <div>
+                      <div class="eyebrow">
+                        <span class="dot"></span> What we annotate
+                      </div>
+                      <h2 class="h2">
+                        Modalities + label types (built for clinical deployment)
+                      </h2>
+                      <p class="muted">
+                        Radiology programs fail when modality/protocol
+                        complexity is treated like generic labeling.
+                      </p>
+                    </div>
+                    <div class="right">
+                      <span class="chip">CT</span><span class="chip">X‑ray</span
+                      ><span class="chip">MRI</span
+                      ><span class="chip">Ultrasound</span>
+                    </div>
+                  </div>
+                  <div class="grid3">
+                    <div class="item">
+                      <b>Detection + triage</b
+                      ><span
+                        >Bounding boxes, keypoints, structured findings with
+                        reviewer confidence.</span
+                      >
+                    </div>
+                    <div class="item">
+                      <b>Segmentation</b
+                      ><span
+                        >Organ/lesion masks with topology checks and volumetric
+                        consistency where needed.</span
+                      >
+                    </div>
+                    <div class="item">
+                      <b>Clinical attributes</b
+                      ><span
+                        >Severity, measurements, laterality, staging fields
+                        aligned to clinical workflows.</span
+                      >
+                    </div>
+                  </div>
+                  <div class="note">
+                    <b>Deployability lever:</b> we design labels as downstream
+                    “clinical interfaces,” not just training targets.
+                  </div>
+                </div>
+              </section>
+              <div class="eyebrow"><span class="dot"></span> Use cases</div>
+              <h2 class="h2">Where this should convert</h2>
+              <p class="muted">
+                Written for enterprise imaging teams evaluating deployment
+                readiness.
+              </p>
+            </div>
+            <div class="right">
+              <span class="chip">Hospitals</span
+              ><span class="chip">Diagnostics networks</span
+              ><span class="chip">Med‑AI enterprises</span>
+            </div>
+          </div>
+          <div class="grid3">
+            <div class="item">
+              <b>Deployable detection/triage models</b
+              ><span
+                >Move from “works on test set” to “safe in hospitals”: validated
+                labels + drift triggers.</span
+              >
+            </div>
+            <div class="item">
+              <b>Foundation model curation</b
+              ><span
+                >Large-scale pretraining datasets with governed provenance and
+                QC discipline.</span
+              >
+            </div>
+            <div class="item">
+              <b>Regulatory validation readiness</b
+              ><span
+                >Evidence exports designed for internal validation committees
+                and external review.</span
+              >
+            </div>
+            <div class="item">
+              <b>Multi-site generalization</b
+              ><span
+                >Quantify worst‑site gaps and build targeted edge‑case
+                augmentation plans.</span
+              >
+            </div>
+            <div class="item">
+              <b>Vendor / PACS integration</b
+              ><span
+                >Dataset packaging + manifests aligned to deployment and change
+                control.</span
+              >
+            </div>
+            <div class="item">
+              <b>Continuous reliability program</b
+              ><span
+                >Ongoing drift checks + re-benchmarking + escalation pipeline
+                for new failure modes.</span
+              >
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="cta" class="section">
+        <div class="container">
+          <div class="card pad">
+            <div class="sectionTop" style="margin-bottom: 8px">
+              <div>
+                <div class="eyebrow">
+                  <span class="dot"></span> Evidence pack
+                </div>
+                <h2 class="h2">What you get with every release</h2>
+                <p class="muted">
+                  Evidence reduces “trust debates” to artifacts.
+                </p>
+              </div>
+              <div class="right">
+                <span class="chip">QC report</span
+                ><span class="chip">Consensus report</span
+                ><span class="chip">Lineage export</span
+                ><span class="chip">Monitoring spec</span>
+              </div>
+            </div>
+            <div class="grid2">
+              <div>
+                <ul class="list">
+                  <li>
+                    Versioned manifest + hashes + deterministic release notes
+                  </li>
+                  <li>
+                    QC report: sampling plan, pass rates, structured error
+                    taxonomy
+                  </li>
+                  <li>
+                    Consensus report: κ/α, adjudication summary, confidence per
+                    cohort
+                  </li>
+                  <li>
+                    Subgroup risk register: site/scanner/protocol bins +
+                    worst-group gaps
+                  </li>
+                  <li>
+                    Monitoring spec: PSI thresholds, alert routing, remediation
+                    playbook
+                  </li>
+                  <li>
+                    Lineage export: who labeled what, when, under which SOP;
+                    approvals
+                  </li>
+                </ul>
+                <div class="note">
+                  <b>Release Gate:</b> Pass / Conditional / Fail based on QC
+                  strength, consensus confidence, and traceability completeness.
+                </div>
+              </div>
+              <div class="video">
+                <div>
+                  <div class="play"></div>
+                  <div
+                    style="
+                      font-size: 15px;
+                      font-weight: 950;
+                      color: var(--text);
+                    "
+                  >
+                    Video placeholder
+                  </div>
+                  <div class="muted" style="margin-top: 6px">
+                    Embed a short demo + a reliability audit offer at the end.
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div style="margin-top: 14px" class="ctaBar">
+              <div>
+                <b>Request a Reliability Audit</b>
+                <span
+                  >Share a dataset manifest. We return CG‑DRS diagnostic +
+                  validation plan + monitoring triggers.</span
+                >
+              </div>
+              <div
+                style="
+                  display: flex;
+                  gap: 10px;
+                  flex-wrap: wrap;
+                  justify-content: flex-end;
+                "
+              >
+                <a class="btn" href="#">Benchmark Your Dataset</a>
+                <a class="btn btnPrimary" href="#"
+                  >Book a Regulatory Readiness Review</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <div id="footer-placeholder"></div>
+
+    <script src="../../components/loader.js"></script>
+    <script src="../../assets/app.js"></script>
+
+    <script src="assets/js/motion.js"></script>
+  </body>
+</html>

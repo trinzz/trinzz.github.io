@@ -1,0 +1,186 @@
+<svg viewBox="0 0 1700 980" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Trinzz AI-native operations agent architecture">
+  <defs>
+    <linearGradient id="brand" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#2563eb"/>
+      <stop offset="55%" stop-color="#7c3aed"/>
+      <stop offset="100%" stop-color="#06b6d4"/>
+    </linearGradient>
+    <linearGradient id="soft" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#f8fafc"/>
+      <stop offset="100%" stop-color="#eef2ff"/>
+    </linearGradient>
+    <style>
+      .title{font-family:Arial,Helvetica,sans-serif;font-size:32px;font-weight:900;fill:#0b1220}
+      .sub{font-family:Arial,Helvetica,sans-serif;font-size:14px;font-weight:700;fill:#475569}
+      .k{font-family:Arial,Helvetica,sans-serif;font-size:12px;font-weight:900;letter-spacing:.14em;text-transform:uppercase;fill:#64748b}
+      .lane{fill:#ffffff;stroke:#e2e8f0;stroke-width:2;rx:22;ry:22}
+      .agent{fill:url(#soft);stroke:#e2e8f0;stroke-width:2;rx:18;ry:18}
+      .agentCore{fill:url(#brand);stroke:none;rx:20;ry:20}
+      .store{fill:#ffffff;stroke:#e2e8f0;stroke-width:2;rx:16;ry:16}
+      .human{fill:#fff7ed;stroke:#fed7aa;stroke-width:2;rx:18;ry:18}
+      .h{font-family:Arial,Helvetica,sans-serif;font-size:16px;font-weight:900;fill:#0b1220}
+      .p{font-family:Arial,Helvetica,sans-serif;font-size:12.5px;font-weight:700;fill:#475569}
+      .hc{font-family:Arial,Helvetica,sans-serif;font-size:16px;font-weight:900;fill:#ffffff}
+      .pc{font-family:Arial,Helvetica,sans-serif;font-size:12.5px;font-weight:800;fill:#eef2ff}
+      .arrow{stroke:#cbd5e1;stroke-width:2.5;marker-end:url(#ah)}
+      .arrow2{stroke:#94a3b8;stroke-width:2.5;marker-end:url(#ah2)}
+      .dash{stroke:#cbd5e1;stroke-width:2.5;stroke-dasharray:6 6;marker-end:url(#ah)}
+      .pill{fill:#ffffff;stroke:#e2e8f0;stroke-width:2;rx:999;ry:999}
+      .pillt{font-family:Arial,Helvetica,sans-serif;font-size:11.5px;font-weight:900;fill:#0b1220}
+    </style>
+    <marker id="ah" markerWidth="10" markerHeight="7" refX="10" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#cbd5e1"/>
+    </marker>
+    <marker id="ah2" markerWidth="10" markerHeight="7" refX="10" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#94a3b8"/>
+    </marker>
+  </defs>
+
+  <!-- Header -->
+  <text x="850" y="64" text-anchor="middle" class="title">Trinzz AI‑Native Operations — Agent Architecture</text>
+  <text x="850" y="92" text-anchor="middle" class="sub">Ingestion → Planning → Work Routing → QC/Consensus → Reliability Scoring → Release → Monitoring (humans as validators, AI as orchestrator)</text>
+
+  <!-- Lanes -->
+  <rect x="60" y="140" width="1580" height="570" class="lane"/>
+  <text x="90" y="170" class="k">OPERATIONS PLANE (AI ORCHESTRATION)</text>
+
+  <rect x="60" y="740" width="1580" height="200" class="lane"/>
+  <text x="90" y="770" class="k">SYSTEM OF RECORD (DATA / EVIDENCE / CONTROLS)</text>
+
+  <!-- Agents row 1 -->
+  <rect x="90" y="205" width="300" height="130" class="agent"/>
+  <text x="110" y="238" class="h">1) Ingestion Agent</text>
+  <text x="110" y="262" class="p">• DICOM/NIfTI/WSI/video parsing</text>
+  <text x="110" y="284" class="p">• Metadata extraction + normalization</text>
+  <text x="110" y="306" class="p">• Hashing, dedup, integrity checks</text>
+
+  <rect x="420" y="205" width="300" height="130" class="agent"/>
+  <text x="440" y="238" class="h">2) De‑ID &amp; Policy Agent</text>
+  <text x="440" y="262" class="p">• PHI detection + de‑identification</text>
+  <text x="440" y="284" class="p">• Jurisdiction / access constraints</text>
+  <text x="440" y="306" class="p">• SOP rules (“policy as code”)</text>
+
+  <rect x="750" y="195" width="360" height="150" class="agentCore"/>
+  <text x="780" y="235" class="hc">3) Task Planner Agent (Core)</text>
+  <text x="780" y="262" class="pc">Builds a TaskGraph (DAG) per dataset:</text>
+  <text x="780" y="284" class="pc">• task types • SOP mapping • review depth</text>
+  <text x="780" y="306" class="pc">• difficulty/risk tiering • sampling plan</text>
+
+  <rect x="1140" y="205" width="300" height="130" class="agent"/>
+  <text x="1160" y="238" class="h">4) Work Dispatcher Agent</text>
+  <text x="1160" y="262" class="p">• Creates WorkUnits + SLAs</text>
+  <text x="1160" y="284" class="p">• Expertise matching + availability</text>
+  <text x="1160" y="306" class="p">• Rebalancing + escalation routing</text>
+
+  <!-- Row 2 -->
+  <rect x="90" y="380" width="300" height="140" class="agent"/>
+  <text x="110" y="413" class="h">5) Pre‑Label Agent</text>
+  <text x="110" y="437" class="p">• Model‑assisted first pass</text>
+  <text x="110" y="459" class="p">• Uncertainty maps / suggestions</text>
+  <text x="110" y="481" class="p">• Logs model/version for evidence</text>
+
+  <rect x="420" y="380" width="300" height="140" class="human"/>
+  <text x="440" y="413" class="h">Human Experts (Validators)</text>
+  <text x="440" y="437" class="p">• Credentialed review + execution</text>
+  <text x="440" y="459" class="p">• Adjudication when disagreement</text>
+  <text x="440" y="481" class="p">• Final sign‑off at release gate</text>
+
+  <rect x="750" y="380" width="300" height="140" class="agent"/>
+  <text x="770" y="413" class="h">6) QC Agent</text>
+  <text x="770" y="437" class="p">• Geometry sanity + rule checks</text>
+  <text x="770" y="459" class="p">• Outlier + noise detection</text>
+  <text x="770" y="481" class="p">• Auto‑pass / flag / rework loops</text>
+
+  <rect x="1080" y="380" width="360" height="140" class="agent"/>
+  <text x="1100" y="413" class="h">7) Consensus Agent</text>
+  <text x="1100" y="437" class="p">• Agreement metrics (κ/α)</text>
+  <text x="1100" y="459" class="p">• Disagreement routing + adjudication</text>
+  <text x="1100" y="481" class="p">• Consensus confidence + audit trail</text>
+
+  <!-- Row 3 -->
+  <rect x="90" y="560" width="360" height="130" class="agent"/>
+  <text x="110" y="593" class="h">8) Reliability Scoring Agent (CG‑DRS)</text>
+  <text x="110" y="617" class="p">• QC strength • calibration readiness</text>
+  <text x="110" y="639" class="p">• subgroup gaps • shift readiness (PSI)</text>
+  <text x="110" y="661" class="p">• traceability completeness</text>
+
+  <rect x="480" y="560" width="360" height="130" class="agentCore"/>
+  <text x="510" y="602" class="hc">9) Release &amp; Evidence Agent</text>
+  <text x="510" y="629" class="pc">Builds versioned dataset + Evidence Pack:</text>
+  <text x="510" y="651" class="pc">QC report • consensus report • lineage export</text>
+  <text x="510" y="673" class="pc">release notes • monitoring spec</text>
+
+  <rect x="870" y="560" width="260" height="130" class="agent"/>
+  <text x="890" y="593" class="h">10) Delivery Agent</text>
+  <text x="890" y="617" class="p">• Secure portal / bucket delivery</text>
+  <text x="890" y="639" class="p">• Signed manifests + hashes</text>
+  <text x="890" y="661" class="p">• Access logging</text>
+
+  <rect x="1160" y="560" width="280" height="130" class="agent"/>
+  <text x="1180" y="593" class="h">11) Monitoring Agent</text>
+  <text x="1180" y="617" class="p">• Drift: PSI / feature / output</text>
+  <text x="1180" y="639" class="p">• Calibration shift + alerts</text>
+  <text x="1180" y="661" class="p">• Edge‑case loopback into planner</text>
+
+  <!-- Arrows: top sequence -->
+  <line x1="390" y1="270" x2="420" y2="270" class="arrow"/>
+  <line x1="720" y1="270" x2="750" y2="270" class="arrow"/>
+  <line x1="1110" y1="270" x2="1140" y2="270" class="arrow"/>
+
+  <!-- Dispatcher to execution -->
+  <line x1="1290" y1="335" x2="570" y2="380" class="arrow2"/>
+  <line x1="1290" y1="335" x2="240" y2="380" class="arrow2"/>
+
+  <!-- Execution to QC -->
+  <line x1="390" y1="450" x2="750" y2="450" class="arrow"/>
+  <line x1="720" y1="450" x2="750" y2="450" class="arrow"/>
+
+  <!-- QC to consensus -->
+  <line x1="1050" y1="450" x2="1080" y2="450" class="arrow"/>
+
+  <!-- Consensus to scoring -->
+  <line x1="1080" y1="520" x2="330" y2="560" class="arrow2"/>
+
+  <!-- Scoring to release -->
+  <line x1="450" y1="625" x2="480" y2="625" class="arrow"/>
+
+  <!-- Release to delivery to monitoring -->
+  <line x1="840" y1="625" x2="870" y2="625" class="arrow"/>
+  <line x1="1130" y1="625" x2="1160" y2="625" class="arrow"/>
+
+  <!-- Monitoring feedback loop -->
+  <path d="M 1440 625 C 1560 625, 1560 250, 1110 250" fill="none" class="dash"/>
+  <text x="1460" y="600" class="p">Feedback loop</text>
+
+  <!-- System of record -->
+  <rect x="90" y="800" width="320" height="120" class="store"/>
+  <text x="110" y="832" class="h">Asset Registry</text>
+  <text x="110" y="856" class="p">files • metadata • hashes • provenance</text>
+  <rect x="110" y="878" width="260" height="32" class="pill"/>
+  <text x="240" y="899" text-anchor="middle" class="pillt">Immutable identifiers</text>
+
+  <rect x="440" y="800" width="320" height="120" class="store"/>
+  <text x="460" y="832" class="h">TaskGraph &amp; WorkUnits</text>
+  <text x="460" y="856" class="p">SOPs • SLAs • assignments • queues</text>
+  <rect x="460" y="878" width="280" height="32" class="pill"/>
+  <text x="600" y="899" text-anchor="middle" class="pillt">Policy-as-code controls</text>
+
+  <rect x="790" y="800" width="360" height="120" class="store"/>
+  <text x="810" y="832" class="h">Evidence &amp; Audit Log</text>
+  <text x="810" y="856" class="p">QC • consensus • reviewer logs • approvals</text>
+  <rect x="810" y="878" width="320" height="32" class="pill"/>
+  <text x="970" y="899" text-anchor="middle" class="pillt">Committee-ready exports</text>
+
+  <rect x="1180" y="800" width="460" height="120" class="store"/>
+  <text x="1200" y="832" class="h">Release Store + Monitoring Policies</text>
+  <text x="1200" y="856" class="p">versions • manifests • CG‑DRS • triggers</text>
+  <rect x="1200" y="878" width="420" height="32" class="pill"/>
+  <text x="1410" y="899" text-anchor="middle" class="pillt">Reproducible builds + alert playbooks</text>
+
+  <!-- Dashed connectors to system of record -->
+  <line x1="240" y1="335" x2="240" y2="800" class="dash"/>
+  <line x1="600" y1="335" x2="600" y2="800" class="dash"/>
+  <line x1="900" y1="520" x2="970" y2="800" class="dash"/>
+  <line x1="1310" y1="690" x2="1410" y2="800" class="dash"/>
+
+</svg>
