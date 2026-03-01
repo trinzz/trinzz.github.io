@@ -1,0 +1,755 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Diagnostic AI Startups - Clinical-Grade Data Infrastructure | Trinzz</title>
+    <meta name="description"
+        content="Build diagnostic AI that survives real clinical deployment. Continuous expert-validated datasets and edge-case detection for Series A-C diagnostic AI startups.">
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="../../css/style.css">
+    <style>
+        /* Page-specific styles */
+        .diagnostic-ai-hero {
+            background: linear-gradient(135deg, #0F172A 0%, #1E293B 100%);
+            color: var(--white);
+            padding: 8rem 0 6rem;
+        }
+
+        .diagnostic-ai-hero h1 {
+            color: var(--white);
+            font-size: 3.5rem;
+            font-weight: 800;
+            line-height: 1.1;
+            margin-bottom: 1.5rem;
+            max-width: 900px;
+        }
+
+        .diagnostic-ai-hero .subhead {
+            font-size: 1.25rem;
+            line-height: 1.6;
+            color: #CBD5E1;
+            margin-bottom: 2rem;
+            max-width: 800px;
+        }
+
+        .diagnostic-ai-hero ul {
+            list-style: none;
+            margin: 2rem 0 3rem;
+            max-width: 800px;
+        }
+
+        .diagnostic-ai-hero ul li {
+            padding-left: 2rem;
+            position: relative;
+            margin-bottom: 1rem;
+            font-size: 1.1rem;
+            color: #E2E8F0;
+        }
+
+        .diagnostic-ai-hero ul li::before {
+            content: "✓";
+            position: absolute;
+            left: 0;
+            color: #3B82F6;
+            font-weight: bold;
+            font-size: 1.3rem;
+        }
+
+        .hero-cta-group {
+            display: flex;
+            gap: 1rem;
+            flex-wrap: wrap;
+        }
+
+        .btn-large {
+            padding: 1rem 2rem;
+            font-size: 1.1rem;
+            font-weight: 600;
+        }
+
+        .btn-white {
+            background-color: var(--white);
+            color: var(--primary-color);
+            border: 2px solid var(--white);
+        }
+
+        .btn-white:hover {
+            background-color: transparent;
+            color: var(--white);
+        }
+
+        .btn-white-outline {
+            background-color: transparent;
+            color: var(--white);
+            border: 2px solid var(--white);
+        }
+
+        .btn-white-outline:hover {
+            background-color: var(--white);
+            color: var(--primary-color);
+        }
+
+        .section-header {
+            text-align: center;
+            margin-bottom: 4rem;
+        }
+
+        .section-header h2 {
+            font-size: 2.5rem;
+            font-weight: 700;
+            margin-bottom: 1rem;
+        }
+
+        .section-header p {
+            font-size: 1.2rem;
+            color: #64748B;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .content-section {
+            padding: 5rem 0;
+        }
+
+        .content-section.alt-bg {
+            background-color: var(--light-bg);
+        }
+
+        .section-body {
+            font-size: 1.15rem;
+            line-height: 1.8;
+            color: var(--text-color);
+            max-width: 900px;
+            margin: 0 auto 2rem;
+        }
+
+        .symptom-list {
+            max-width: 900px;
+            margin: 2rem auto;
+            padding: 0;
+        }
+
+        .symptom-list li {
+            padding: 1.25rem 1.5rem 1.25rem 3rem;
+            position: relative;
+            margin-bottom: 1rem;
+            background: var(--white);
+            border-left: 4px solid var(--secondary-color);
+            border-radius: 4px;
+            box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+        }
+
+        .symptom-list li::before {
+            content: "→";
+            position: absolute;
+            left: 1rem;
+            color: var(--secondary-color);
+            font-weight: bold;
+            font-size: 1.2rem;
+        }
+
+        .mini-list {
+            max-width: 900px;
+            margin: 2rem auto;
+            padding: 0;
+        }
+
+        .mini-list li {
+            padding: 1rem 1.5rem 1rem 2.5rem;
+            position: relative;
+            margin-bottom: 0.75rem;
+            font-size: 1.1rem;
+        }
+
+        .mini-list li::before {
+            content: "✓";
+            position: absolute;
+            left: 0.5rem;
+            color: var(--secondary-color);
+            font-weight: bold;
+            font-size: 1.2rem;
+        }
+
+        .callout-box {
+            background: linear-gradient(135deg, #3B82F6 0%, #2563EB 100%);
+            color: var(--white);
+            padding: 2rem 3rem;
+            border-radius: 8px;
+            font-size: 1.3rem;
+            font-weight: 600;
+            text-align: center;
+            max-width: 900px;
+            margin: 3rem auto;
+            box-shadow: 0 10px 25px rgba(59, 130, 246, 0.3);
+        }
+
+        .capabilities-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 2rem;
+            margin-top: 3rem;
+        }
+
+        .capability-card {
+            background: var(--white);
+            padding: 2.5rem;
+            border-radius: 8px;
+            border: 1px solid var(--border-color);
+            transition: all 0.3s ease;
+        }
+
+        .capability-card:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+            border-color: var(--secondary-color);
+        }
+
+        .capability-card h3 {
+            font-size: 1.3rem;
+            margin-bottom: 1rem;
+            color: var(--primary-color);
+        }
+
+        .capability-card p {
+            color: var(--text-color);
+            line-height: 1.7;
+        }
+
+        .outcomes-list {
+            max-width: 900px;
+            margin: 2rem auto;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 1.5rem;
+        }
+
+        .outcomes-list li {
+            padding: 1.5rem;
+            background: var(--white);
+            border-left: 4px solid var(--secondary-color);
+            border-radius: 4px;
+            font-size: 1.1rem;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+        }
+
+        .how-it-works {
+            max-width: 1000px;
+            margin: 3rem auto;
+        }
+
+        .how-step {
+            display: flex;
+            align-items: flex-start;
+            gap: 2rem;
+            margin-bottom: 2.5rem;
+            padding: 2rem;
+            background: var(--white);
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+        }
+
+        .step-number {
+            flex-shrink: 0;
+            width: 60px;
+            height: 60px;
+            background: linear-gradient(135deg, #3B82F6 0%, #2563EB 100%);
+            color: var(--white);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.8rem;
+            font-weight: 700;
+        }
+
+        .step-content {
+            flex: 1;
+        }
+
+        .step-content p {
+            font-size: 1.15rem;
+            line-height: 1.7;
+            margin: 0;
+        }
+
+        .proof-bullets {
+            max-width: 900px;
+            margin: 2rem auto;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+        }
+
+        .proof-bullets li {
+            padding: 1.5rem;
+            background: var(--light-bg);
+            border-radius: 8px;
+            font-size: 1.1rem;
+            text-align: center;
+            font-weight: 500;
+        }
+
+        .faq-section {
+            max-width: 900px;
+            margin: 3rem auto;
+        }
+
+        .faq-item {
+            margin-bottom: 1.5rem;
+            background: var(--white);
+            border: 1px solid var(--border-color);
+            border-radius: 8px;
+            overflow: hidden;
+        }
+
+        .faq-question {
+            width: 100%;
+            padding: 1.5rem 2rem;
+            background: transparent;
+            border: none;
+            text-align: left;
+            font-size: 1.2rem;
+            font-weight: 600;
+            color: var(--primary-color);
+            cursor: pointer;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            transition: background-color 0.3s ease;
+        }
+
+        .faq-question:hover {
+            background-color: var(--light-bg);
+        }
+
+        .faq-question::after {
+            content: "+";
+            font-size: 1.8rem;
+            font-weight: 400;
+            color: var(--secondary-color);
+            transition: transform 0.3s ease;
+        }
+
+        .faq-item.active .faq-question::after {
+            transform: rotate(45deg);
+        }
+
+        .faq-answer {
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.3s ease;
+        }
+
+        .faq-answer-content {
+            padding: 0 2rem 1.5rem;
+            font-size: 1.05rem;
+            line-height: 1.7;
+            color: var(--text-color);
+        }
+
+        .faq-item.active .faq-answer {
+            max-height: 500px;
+        }
+
+        .final-cta-section {
+            background: linear-gradient(135deg, #1E293B 0%, #0F172A 100%);
+            color: var(--white);
+            padding: 6rem 0;
+            text-align: center;
+        }
+
+        .final-cta-section h2 {
+            color: var(--white);
+            font-size: 3rem;
+            margin-bottom: 1.5rem;
+        }
+
+        .final-cta-section p {
+            font-size: 1.3rem;
+            color: #CBD5E1;
+            margin-bottom: 2.5rem;
+            max-width: 800px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        @media (max-width: 768px) {
+            .diagnostic-ai-hero h1 {
+                font-size: 2.5rem;
+            }
+
+            .diagnostic-ai-hero .subhead {
+                font-size: 1.1rem;
+            }
+
+            .section-header h2 {
+                font-size: 2rem;
+            }
+
+            .final-cta-section h2 {
+                font-size: 2.2rem;
+            }
+
+            .hero-cta-group {
+                flex-direction: column;
+            }
+
+            .btn-large {
+                width: 100%;
+                text-align: center;
+            }
+
+            .how-step {
+                flex-direction: column;
+                text-align: center;
+            }
+
+            .step-number {
+                margin: 0 auto;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <a href="../../index.html" class="logo"><img src="../../assets/logo.png" alt="Trinzz Logo" style="height: 32px;"></a>
+            <button class="mobile-menu-btn" aria-label="Toggle menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <div class="nav-links">
+                <a href="../../about-us.html">About Us</a>
+                <a href="https://blog.trinzz.com/insights" target="_blank">Blog</a>
+                <a href="https://links.trinzz.com/widget/survey/xtYLHtWeMELQQf4NiXOh" target="_blank">Survey</a>
+                <a href="https://vive2026.mapyourshow.com/8_0/exhibitor/exhibitor-details.cfm?exhid=ViVE2026_1069"
+                    target="_blank">ViVE 2026</a>
+                <a href="https://pmwcintl.com/speaker/trina-das-494_trinzz_2026sv" target="_blank">PMWC</a>
+                <a href="https://stage.trinzz.com/login" class="btn btn-outline" target="_blank">Login</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="diagnostic-ai-hero">
+        <div class="container">
+            <h1>Build Diagnostic AI That Survives Real Clinical Deployment</h1>
+            <p class="subhead">Most diagnostic AI models look strong in development—but reliability breaks in real clinical environments. This is not a model limitation. It's a data infrastructure limitation.</p>
+            <ul>
+                <li>Continuous expert-validated datasets</li>
+                <li>Edge-case detection and resolution pipelines</li>
+                <li>Regulatory-grade dataset lineage and auditability</li>
+                <li>Infrastructure aligned to multi-site deployment</li>
+            </ul>
+            <div class="hero-cta-group">
+                <a href="https://calendly.com/td-trinzz/new-meeting" class="btn btn-white btn-large" target="_blank">Request partnership</a>
+                <a href="https://calendly.com/td-trinzz/new-meeting" class="btn btn-white-outline btn-large" target="_blank">Talk to infrastructure team</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- The Deployment Gap -->
+    <section class="content-section">
+        <div class="container">
+            <div class="section-header">
+                <h2>The Deployment Gap Facing Diagnostic AI Companies</h2>
+            </div>
+            <p class="section-body">Every diagnostic AI startup reaches the same inflection point. Early datasets and internal pipelines can train initial models, but enterprise deployment introduces new variables: scanner heterogeneity, shifting patient populations, rare edge cases, and regulatory demands. Static datasets and ad-hoc labeling workflows create a deployment ceiling—regardless of model architecture.</p>
+            <ul class="symptom-list">
+                <li>Performance varies across hospitals and scanner environments</li>
+                <li>Rare and ambiguous cases expose blind spots</li>
+                <li>Dataset quality becomes inconsistent at scale</li>
+                <li>Regulatory readiness requires traceable, validated datasets</li>
+                <li>ML teams get pulled into data operations instead of model innovation</li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- Static Datasets Don't Survive -->
+    <section class="content-section alt-bg">
+        <div class="container">
+            <div class="section-header">
+                <h2>Diagnostic AI Requires Continuous Data Infrastructure — Not Static Datasets</h2>
+            </div>
+            <p class="section-body">Clinical environments are dynamic systems. Each deployment introduces distribution shifts and unseen failure modes. Diagnostic AI systems must continuously evolve alongside real-world conditions. This requires infrastructure designed to capture failures, validate with experts, maintain lineage, and safely improve models over time.</p>
+            <ul class="mini-list">
+                <li>Capture real-world edge cases</li>
+                <li>Validate with clinical experts</li>
+                <li>Maintain dataset integrity + versioning</li>
+                <li>Support continuous expansion aligned with deployment environments</li>
+                <li>Enable safe, ongoing model improvement</li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- Why Internal Pipelines Bottleneck -->
+    <section class="content-section">
+        <div class="container">
+            <div class="section-header">
+                <h2>Why Internal Data Pipelines Become a Bottleneck</h2>
+            </div>
+            <p class="section-body">Scaling internal pipelines into clinical-grade infrastructure requires more than ML engineering. It requires expert review networks, validation workflows, lineage systems, and edge-case operations. Building this internally diverts engineering focus, increases operational complexity, and slows enterprise deployments.</p>
+            <div class="callout-box">
+                Infrastructure becomes the bottleneck—not the model.
+            </div>
+        </div>
+    </section>
+
+    <!-- Trinzz Solution -->
+    <section class="content-section alt-bg">
+        <div class="container">
+            <div class="section-header">
+                <h2>Trinzz Provides the Clinical-Grade Data Infrastructure Layer for Diagnostic AI</h2>
+            </div>
+            <p class="section-body">Trinzz integrates as a foundational infrastructure layer supporting your diagnostic AI lifecycle—from model development through enterprise deployment. We provide continuous, expert-validated data infrastructure that keeps models reliable, scalable, and regulatory-ready.</p>
+        </div>
+    </section>
+
+    <!-- Infrastructure Capabilities -->
+    <section class="content-section">
+        <div class="container">
+            <div class="section-header">
+                <h2>Infrastructure Capabilities</h2>
+            </div>
+            <div class="capabilities-grid">
+                <div class="capability-card">
+                    <h3>Continuous Expert-Validated Dataset Pipelines</h3>
+                    <p>Maintain continuously evolving datasets validated by clinical experts, ensuring your models stay aligned with real clinical environments.</p>
+                </div>
+                <div class="capability-card">
+                    <h3>Edge-Case Detection and Resolution</h3>
+                    <p>Identify rare, ambiguous, and high-risk cases. Route them through expert validation workflows and integrate validated ground truth back into dataset versions.</p>
+                </div>
+                <div class="capability-card">
+                    <h3>Dataset Lineage, Traceability, and Auditability</h3>
+                    <p>Maintain dataset provenance, validation records, and version history to support regulatory readiness and enterprise QA.</p>
+                </div>
+                <div class="capability-card">
+                    <h3>Infrastructure Aligned with Deployment Environments</h3>
+                    <p>Build datasets that reflect real deployment conditions across sites, scanners, protocols, and patient populations—so performance holds up in production.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Outcomes -->
+    <section class="content-section alt-bg">
+        <div class="container">
+            <div class="section-header">
+                <h2>Outcomes Enabled by Trinzz</h2>
+            </div>
+            <ul class="outcomes-list">
+                <li>Faster enterprise deployment timelines</li>
+                <li>Improved real-world reliability under distribution shift</li>
+                <li>Accelerated regulatory readiness</li>
+                <li>Higher clinician and customer trust</li>
+                <li>Reduced internal infrastructure burden</li>
+                <li>Scalable expansion across institutions</li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- How It Works -->
+    <section class="content-section">
+        <div class="container">
+            <div class="section-header">
+                <h2>How Trinzz Works With Your Team</h2>
+            </div>
+            <div class="how-it-works">
+                <div class="how-step">
+                    <div class="step-number">1</div>
+                    <div class="step-content">
+                        <p>Connect your deployment + data sources</p>
+                    </div>
+                </div>
+                <div class="how-step">
+                    <div class="step-number">2</div>
+                    <div class="step-content">
+                        <p>Detect failures and edge cases in real-world conditions</p>
+                    </div>
+                </div>
+                <div class="how-step">
+                    <div class="step-number">3</div>
+                    <div class="step-content">
+                        <p>Expert validation + disagreement resolution</p>
+                    </div>
+                </div>
+                <div class="how-step">
+                    <div class="step-number">4</div>
+                    <div class="step-content">
+                        <p>Versioned datasets ready for retraining, QA, and regulatory evidence</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Proof / Credibility -->
+    <section class="content-section alt-bg">
+        <div class="container">
+            <div class="section-header">
+                <h2>Built for Clinical-Grade Reliability</h2>
+            </div>
+            <ul class="proof-bullets">
+                <li>Expert-in-the-loop validation workflows</li>
+                <li>Audit-ready dataset provenance and version control</li>
+                <li>Quality gates designed for clinical deployment</li>
+                <li>Designed for scale: millions of assets, multi-site expansion</li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- FAQ -->
+    <section class="content-section">
+        <div class="container">
+            <div class="section-header">
+                <h2>Frequently Asked Questions</h2>
+            </div>
+            <div class="faq-section">
+                <div class="faq-item">
+                    <button class="faq-question">Is Trinzz an annotation vendor?</button>
+                    <div class="faq-answer">
+                        <div class="faq-answer-content">
+                            No. Trinzz is clinical-grade data infrastructure: continuous validation, edge-case operations, dataset lineage, and deployment-aligned dataset evolution. With Trinzz you will achieve regulatory ready clinical standard annotated datasets for your specific requirement.
+                        </div>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-question">We already have datasets. Why do we need this?</button>
+                    <div class="faq-answer">
+                        <div class="faq-answer-content">
+                            Static datasets don't capture real-world distribution shift, rare failure modes, and ongoing regulatory evidence requirements. Continuous infrastructure keeps reliability intact as you scale.
+                        </div>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-question">Will this slow our ML team down?</button>
+                    <div class="faq-answer">
+                        <div class="faq-answer-content">
+                            It removes the data-ops burden from ML engineering so your team can focus on model innovation while infrastructure stays deployment-grade.
+                        </div>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-question">What do we get in the first 15 days?</button>
+                    <div class="faq-answer">
+                        <div class="faq-answer-content">
+                            A baseline infrastructure integration plan, initial edge-case workflow, expert validation loop, and dataset lineage framework aligned to your deployment goals.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Final CTA -->
+    <section class="final-cta-section">
+        <div class="container">
+            <h2>Build Diagnostic AI Systems That Scale Reliably</h2>
+            <p>Establish the clinical-grade data infrastructure required for enterprise deployment, regulatory readiness, and continuous model improvement.</p>
+            <div class="hero-cta-group" style="justify-content: center;">
+                <a href="https://calendly.com/td-trinzz/new-meeting" class="btn btn-white btn-large" target="_blank">Request partnership</a>
+                <a href="https://calendly.com/td-trinzz/new-meeting" class="btn btn-white-outline btn-large" target="_blank">Talk to infrastructure team</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-grid-new">
+                <div class="footer-brand-col">
+                    <a href="../../index.html" class="logo" style="margin-bottom: 1.5rem; display: block;"><img src="../../assets/logo.png"
+                            alt="Trinzz Logo" style="height: 48px;"></a>
+                    <p style="color: #64748B; font-size: 1rem; max-width: 400px; line-height: 1.8;">
+                        Trinzz is at the forefront of researching the latest advancements in computer vision and visual
+                        data processing technologies specializing in bio-medical 3D stacked data, dicom, nifti data to
+                        redefine your computer vision based AI experience. Unleash your possibilities, create compelling
+                        outcomes, and elevate your applications with Trinzz.
+                    </p>
+                </div>
+                <div class="footer-contact-col">
+                    <h4>Contact Us</h4>
+                    <div class="contact-divider"></div>
+                    <ul class="contact-list">
+                        <li>
+                            <svg class="contact-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="2">
+                                <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+                                <circle cx="12" cy="10" r="3"></circle>
+                            </svg>
+                            <span>2010 El Camino Real, Suite #1311, Santa Clara, CA 95050</span>
+                        </li>
+                        <li>
+                            <svg class="contact-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="2">
+                                <path
+                                    d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z">
+                                </path>
+                            </svg>
+                            <span>+1-408-210-2922</span>
+                        </li>
+                        <li>
+                            <svg class="contact-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="2">
+                                <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z">
+                                </path>
+                                <polyline points="22,6 12,13 2,6"></polyline>
+                            </svg>
+                            <span>hello@trinzz.com</span>
+                        </li>
+                    </ul>
+                    <a href="https://calendly.com/td-trinzz/new-meeting" class="btn btn-primary"
+                        style="margin-top: 2rem; width: 100%; text-align: center;" target="_blank">Book A Demo
+                        &rarr;</a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Trinzz. All rights reserved.</p>
+                <div style="display: flex; gap: 1.5rem;">
+                    <a href="https://blog.trinzz.com/insights" target="_blank">Blog</a>
+                    <a href="../../privacy-policy.html">Privacy Policy</a>
+                    <a href="../../terms-of-service.html">Terms of Service</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="../../js/main.js"></script>
+    <script>
+        // FAQ Accordion
+        document.addEventListener('DOMContentLoaded', () => {
+            const faqItems = document.querySelectorAll('.faq-item');
+            
+            faqItems.forEach(item => {
+                const question = item.querySelector('.faq-question');
+                
+                question.addEventListener('click', () => {
+                    const isActive = item.classList.contains('active');
+                    
+                    // Close all items
+                    faqItems.forEach(i => i.classList.remove('active'));
+                    
+                    // Open clicked item if it wasn't active
+                    if (!isActive) {
+                        item.classList.add('active');
+                    }
+                });
+            });
+        });
+    </script>
+</body>
+
+</html>
